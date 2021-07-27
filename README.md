@@ -81,3 +81,5 @@ In this course you will learn about:
 * Content-Based Recommender Systems
 * Collaborative Filtering
 * Lab & Review
+
+### Final Exam
