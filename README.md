@@ -90,7 +90,8 @@ In this lesson you will learn about:
 * Python libraries for Machine Learning
 * Supervised vs Unsupervised Learning 
 
-## What is machine learning
+## Introduction to machine learning
+### What is machine learning
 ![defml 1](images/defml1.png)
 ### How machine learning works ?
 ![mlwork](images/howmlworks.png)
