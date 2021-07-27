@@ -115,3 +115,8 @@ In this lesson you will learn about:
 * Dimension Reduction
   * Reducing the size of data (PCA)
 * Recommendation systems
+  * Recommending items
+
+## Difference between artificial intelligence, machine learning and deep learning
+
+![differenceaiml](images/differenceaimldk.png)
