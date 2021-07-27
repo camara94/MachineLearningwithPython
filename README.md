@@ -62,3 +62,11 @@ In this course you will learn about:
 * Model Evaluation in Regression Models
 * Non-Linear Regression
 * Lab & Review
+
+### Module 3 - Classification
+* K-Nearest Neighbors
+* Decision Trees
+* Evaluation Metrics in Classification
+* Logistic Regression vs Linear Regressin
+* Support Vector Machine (SVM)
+* Lab & Review
