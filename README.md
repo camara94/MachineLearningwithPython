@@ -49,3 +49,9 @@ In this course you will learn about:
  * Recommender Systems: Content-Based and Collaborative Filtering
  * Popular models: Train/Test Split, Gradient Descent, and Mean Squared Error
  * Get ready to do more learning than your machine!
+
+## Syllabus
+### Module 1 - Machine Learning
+* Python for Machine Learning
+* Supervised vs Unsupervised
+* Lab & Review
