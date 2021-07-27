@@ -95,3 +95,7 @@ In this lesson you will learn about:
 ### How machine learning works ?
 ![mlwork](images/howmlworks.png)
 ![mlwork](images/howmlworks2.png)
+### Examples of machine learning
+![ml](images/examplesofml.png)
+![ml](images/examplesofml2.png)
+
