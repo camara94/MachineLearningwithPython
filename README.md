@@ -76,3 +76,8 @@ In this course you will learn about:
 * Hierarchical Clustering
 * DBSCAN
 * Lab & Review
+
+### Module 5 - Recommender Systems
+* Content-Based Recommender Systems
+* Collaborative Filtering
+* Lab & Review
