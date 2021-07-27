@@ -83,3 +83,9 @@ In this course you will learn about:
 * Lab & Review
 
 ### Final Exam
+
+## Learning Objectives
+In this lesson you will learn about:
+* Machine Learning applications 
+* Python libraries for Machine Learning
+* Supervised vs Unsupervised Learning 
