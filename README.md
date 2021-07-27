@@ -92,3 +92,6 @@ In this lesson you will learn about:
 
 ## What is machine learning
 ![defml 1](images/defml1.png)
+### How machine learning works ?
+![mlwork](images/howmlworks.png)
+![mlwork](images/howmlworks2.png)
