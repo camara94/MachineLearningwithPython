@@ -99,3 +99,19 @@ In this lesson you will learn about:
 ![ml](images/examplesofml.png)
 ![ml](images/examplesofml2.png)
 
+### Major machine learning techniques
+* Regression/Estimation
+  * Predicting continuous values
+* Classification
+  * Predicting the item class / category a case
+* Clustering
+  * Finding the structure of data; summarization
+* Association
+  * Association frequent co-occuring items / events
+*  Anomaly detection
+  * Discovering abnormal and unusuals cases
+* Sequence mining
+  * Predicting next events; click-stream (Markov Model, HMM)
+* Dimension Reduction
+  * Reducing the size of data (PCA)
+* Recommendation systems
