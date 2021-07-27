@@ -1,5 +1,3 @@
-# Machine Learning With Python
-## Welcome
 Hello, and welcome to Machine Learning with Python.
 In this course, you’ll learn how Machine Learning is used in many key fields and industries.
 For example, in the health care industry, data scientists use Machine Learning to predict
