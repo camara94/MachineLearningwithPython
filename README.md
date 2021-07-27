@@ -37,3 +37,9 @@ predicting economic trends, predicting customer churn, recommendation engines, a
 You’ll also get a certificate in machine learning to prove your competency, and share
 it anywhere you like online or offline, such as LinkedIn profiles and social media.
 So let’s get started.
+
+## Learning Objectives
+### In this course you will learn about:
+* How Statistical Modeling relates to Machine Learning and do a comparison of each.
+* Real-life examples of Machine learning and how it affects society in ways you may not have guessed!
+* In the labs: Use Python libraries for Machine Learning, such as scikit-learn.
