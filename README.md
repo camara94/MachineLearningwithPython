@@ -39,7 +39,13 @@ it anywhere you like online or offline, such as LinkedIn profiles and social med
 So let’s get started.
 
 ## Learning Objectives
-### In this course you will learn about:
+In this course you will learn about:
 * How Statistical Modeling relates to Machine Learning and do a comparison of each.
 * Real-life examples of Machine learning and how it affects society in ways you may not have guessed!
 * In the labs: Use Python libraries for Machine Learning, such as scikit-learn.
+ 
+ Explore many algorithms and models:
+ * Popular algorithms: Regression, Classification, and Clustering
+ * Recommender Systems: Content-Based and Collaborative Filtering
+ * Popular models: Train/Test Split, Gradient Descent, and Mean Squared Error
+ * Get ready to do more learning than your machine!
