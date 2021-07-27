@@ -55,3 +55,10 @@ In this course you will learn about:
 * Python for Machine Learning
 * Supervised vs Unsupervised
 * Lab & Review
+
+### Module 2 - Regression
+* Simple Linear Regression
+* Multiple Linear Regression
+* Model Evaluation in Regression Models
+* Non-Linear Regression
+* Lab & Review
