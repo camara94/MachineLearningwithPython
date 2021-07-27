@@ -120,3 +120,6 @@ In this lesson you will learn about:
 ## Difference between artificial intelligence, machine learning and deep learning
 
 ![differenceaiml](images/differenceaimldk.png)
+
+## Let's get started with machine learning!
+![lets](images/letstartedml.png)
