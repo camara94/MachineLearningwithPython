@@ -89,3 +89,6 @@ In this lesson you will learn about:
 * Machine Learning applications 
 * Python libraries for Machine Learning
 * Supervised vs Unsupervised Learning 
+
+## What is machine learning
+![defml 1](images/defml1.png)
