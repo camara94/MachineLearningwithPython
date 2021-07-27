@@ -1,0 +1,456 @@
+0
+00:00:00,680 --> 00:00:02,530
+Hello, and welcome!
+
+1
+00:00:02,530 --> 00:00:06,839
+In this video I will give you a high level introduction to Machine Learning.
+
+2
+00:00:06,839 --> 00:00:09,480
+So let’s get started.
+
+3
+00:00:09,480 --> 00:00:13,520
+This is a human cell sample extracted from a patient.
+
+4
+00:00:13,520 --> 00:00:20,240
+And this cell has characteristics … for example, its Clump thickness is 6, its Uniformity
+
+5
+00:00:20,240 --> 00:00:26,660
+of cell size is 1, its Marginal adhesion is 1, and so on.
+
+6
+00:00:26,660 --> 00:00:32,910
+One of the interesting questions we can ask, at this point is: &quot;Is this a Benign or Malignant
+
+7
+00:00:32,910 --> 00:00:34,270
+cell?&quot;
+
+8
+00:00:34,270 --> 00:00:39,750
+In contrast with a benign tumor, a malignant tumor is a tumor that may invade its surrounding
+
+9
+00:00:39,750 --> 00:00:46,660
+tissue or spread around the body, and diagnosing it early might be the key to a patient’s
+
+10
+00:00:46,660 --> 00:00:47,660
+survival.
+
+11
+00:00:47,660 --> 00:00:53,000
+One could easily presume that only a doctor with years of experience could diagnose that
+
+12
+00:00:53,000 --> 00:00:57,510
+tumor and say if the patient is developing cancer or not.
+
+13
+00:00:57,510 --> 00:00:58,670
+Right?
+
+14
+00:00:58,670 --> 00:01:04,360
+Well, imagine that you’ve obtained a dataset containing characteristics of thousands of
+
+15
+00:01:04,360 --> 00:01:09,720
+human cell samples extracted from patients who were believed to be at risk of developing
+
+16
+00:01:09,720 --> 00:01:11,530
+cancer.
+
+17
+00:01:11,530 --> 00:01:16,850
+Analysis of the original data showed that many of the characteristics differed significantly
+
+18
+00:01:16,850 --> 00:01:20,430
+between benign and malignant samples.
+
+19
+00:01:20,430 --> 00:01:26,290
+You can use the values of these cell characteristics in samples from other patients to give an
+
+20
+00:01:26,290 --> 00:01:31,200
+early indication of whether a new sample might be benign or malignant.
+
+21
+00:01:31,200 --> 00:01:37,540
+You should clean your data, select a proper algorithm for building a prediction model,
+
+22
+00:01:37,540 --> 00:01:43,799
+and train your model to understand patterns of benign or malignant cells within the data.
+
+23
+00:01:43,799 --> 00:01:48,850
+Once the model has been trained by going through data iteratively, it can be used to predict
+
+24
+00:01:48,850 --> 00:01:53,880
+your new or unknown cell with a rather high accuracy.
+
+25
+00:01:53,880 --> 00:01:56,140
+This is machine learning!
+
+26
+00:01:56,140 --> 00:02:00,920
+It is the way that a machine learning model can do a doctor’s task or at least help
+
+27
+00:02:00,920 --> 00:02:04,060
+that doctor make the process faster.
+
+28
+00:02:04,060 --> 00:02:09,280
+Now, let me give a formal definition of machine learning.
+
+29
+00:02:09,280 --> 00:02:13,909
+Machine learning is the subfield of computer science that gives &quot;computers the ability
+
+30
+00:02:13,909 --> 00:02:18,290
+to learn without being explicitly programmed.”
+
+31
+00:02:18,290 --> 00:02:24,159
+Let me explain what I mean when I say “without being explicitly programmed.”
+
+32
+00:02:24,159 --> 00:02:29,500
+Assume that you have a dataset of images of animals such as cats and dogs, and you want
+
+33
+00:02:29,500 --> 00:02:35,529
+to have software or an application that can recognize and differentiate them.
+
+34
+00:02:35,529 --> 00:02:41,739
+The first thing that you have to do here is interpret the images as a set of feature sets.
+
+35
+00:02:41,739 --> 00:02:45,900
+For example, does the image show the animal’s eyes?
+
+36
+00:02:45,900 --> 00:02:48,379
+If so, what is their size?
+
+37
+00:02:48,379 --> 00:02:49,889
+Does it have ears?
+
+38
+00:02:49,889 --> 00:02:51,370
+What about a tail?
+
+39
+00:02:51,370 --> 00:02:52,370
+How many legs?
+
+40
+00:02:52,370 --> 00:02:55,120
+Does it have wings?
+
+41
+00:02:55,120 --> 00:03:00,400
+Prior to machine learning, each image would be transformed to a vector of features.
+
+42
+00:03:00,400 --> 00:03:05,760
+Then, traditionally, we had to write down some rules or methods in order to get computers
+
+43
+00:03:05,760 --> 00:03:08,889
+to be intelligent and detect the animals.
+
+44
+00:03:08,889 --> 00:03:11,339
+But, it was a failure.
+
+45
+00:03:11,339 --> 00:03:12,339
+Why?
+
+46
+00:03:12,339 --> 00:03:18,879
+Well, as you can guess, it needed a lot of rules, highly dependent on the current dataset,
+
+47
+00:03:18,879 --> 00:03:23,489
+and not generalized enough to detect out-of-sample cases.
+
+48
+00:03:23,489 --> 00:03:27,040
+This is when machine learning entered the scene.
+
+49
+00:03:27,040 --> 00:03:32,370
+Using machine learning allows us to build a model that looks at all the feature sets,
+
+50
+00:03:32,370 --> 00:03:39,239
+and their corresponding type of animals, and learn it learns the pattern of each animal.
+
+51
+00:03:39,239 --> 00:03:43,159
+It is a model built by machine learning algorithms.
+
+52
+00:03:43,159 --> 00:03:47,049
+It detects without explicitly being programmed to do so.
+
+53
+00:03:47,049 --> 00:03:53,760
+In essence, machine learning follows the same process that a 4-year-old child uses to learn,
+
+54
+00:03:53,760 --> 00:03:56,859
+understand, and differentiate animals.
+
+55
+00:03:56,859 --> 00:04:03,430
+So, machine learning algorithms, inspired by the human learning process, iteratively
+
+56
+00:04:03,430 --> 00:04:09,159
+learn from data, and allow computers to find hidden insights.
+
+57
+00:04:09,159 --> 00:04:15,530
+These models help us in a variety of tasks, such as object recognition, summarization,
+
+58
+00:04:15,530 --> 00:04:18,989
+recommendation, and so on.
+
+59
+00:04:18,988 --> 00:04:22,560
+Machine Learning impacts society in a very influential way.
+
+60
+00:04:22,560 --> 00:04:26,919
+Here are some real-life examples.
+
+61
+00:04:26,919 --> 00:04:33,410
+First, how do you think Netflix and Amazon recommend videos, movies, and TV shows to its users?
+
+62
+00:04:33,410 --> 00:04:38,139
+They use Machine Learning to produce suggestions that you might enjoy!
+
+63
+00:04:38,139 --> 00:04:42,439
+This is similar to how your friends might recommend a television show to you, based
+
+64
+00:04:42,439 --> 00:04:45,550
+on their knowledge of the types of shows you like to watch.
+
+65
+00:04:45,550 --> 00:04:50,880
+How do you think banks make a decision when approving a loan application?
+
+66
+00:04:50,880 --> 00:04:57,169
+They use machine learning to predict the probability of default for each applicant, and then approve
+
+67
+00:04:57,169 --> 00:05:01,700
+or refuse the loan application based on that probability.
+
+68
+00:05:01,700 --> 00:05:08,199
+Telecommunication companies use their customers’ demographic data to segment them, or predict
+
+69
+00:05:08,199 --> 00:05:12,540
+if they will unsubscribe from their company the next month.
+
+70
+00:05:12,540 --> 00:05:17,330
+There are many other applications of machine learning that we see every day in our daily
+
+71
+00:05:17,330 --> 00:05:25,500
+life, such as chatbots, logging into our phones or even computer games using face recognition.
+
+72
+00:05:25,500 --> 00:05:29,229
+Each of these use different machine learning techniques and algorithms.
+
+73
+00:05:29,229 --> 00:05:33,969
+So, let’s quickly examine a few of the more popular techniques.
+
+74
+00:05:33,969 --> 00:05:40,080
+The Regression/Estimation technique is used for predicting a continuous value, for example,
+
+75
+00:05:40,080 --> 00:05:45,389
+predicting things like the price of a house based on its characteristics, or to estimate
+
+76
+00:05:45,389 --> 00:05:48,870
+the Co2 emission from a car’s engine.
+
+77
+00:05:48,870 --> 00:05:54,580
+A Classification technique is used for Predicting the class or category of a case, for example,
+
+78
+00:05:54,580 --> 00:06:01,030
+if a cell is benign or malignant, or whether or not a customer will churn.
+
+79
+00:06:01,030 --> 00:06:06,910
+Clustering groups of similar cases, for example, can find similar patients, or can be used
+
+80
+00:06:06,910 --> 00:06:10,830
+for customer segmentation in the banking field.
+
+81
+00:06:10,830 --> 00:06:16,469
+Association technique is used for finding items or events that often co-occur, for example,
+
+82
+00:06:16,469 --> 00:06:21,090
+grocery items that are usually bought together by a particular customer.
+
+83
+00:06:21,090 --> 00:06:27,249
+Anomaly detection is used to discover abnormal and unusual cases, for example, it is used
+
+84
+00:06:27,249 --> 00:06:30,150
+for credit card fraud detection.
+
+85
+00:06:30,150 --> 00:06:35,650
+Sequence mining is used for predicting the next event, for instance, the click-stream
+
+86
+00:06:35,650 --> 00:06:37,439
+in websites.
+
+87
+00:06:37,439 --> 00:06:41,710
+Dimension reduction is used to reduce the size of data.
+
+88
+00:06:41,710 --> 00:06:47,509
+And finally, recommendation systems; this associates people&#39;s preferences with others
+
+89
+00:06:47,509 --> 00:06:54,289
+who have similar tastes, and recommends new items to them, such as books or movies.
+
+90
+00:06:54,289 --> 00:06:58,530
+We will cover some of these techniques in the next videos.
+
+91
+00:06:58,530 --> 00:07:03,789
+By this point, I’m quite sure this question has crossed your mind, “What is the difference
+
+92
+00:07:03,789 --> 00:07:09,330
+between these buzzwords that we keep hearing these days, such as Artificial intelligence
+
+93
+00:07:09,330 --> 00:07:13,040
+(or AI), Machine Learning and Deep Learning?”
+
+94
+00:07:13,040 --> 00:07:16,520
+Well, let me explain what is different between them.
+
+95
+00:07:16,520 --> 00:07:23,150
+In brief, AI tries to make computers intelligent in order to mimic the cognitive functions
+
+96
+00:07:23,150 --> 00:07:24,639
+of humans.
+
+97
+00:07:24,639 --> 00:07:31,440
+So, Artificial Intelligence is a general field with a broad scope including: Computer Vision,
+
+98
+00:07:31,440 --> 00:07:36,830
+Language Processing, Creativity, and Summarization.
+
+99
+00:07:36,830 --> 00:07:42,469
+Machine Learning is the branch of AI that covers the statistical part of artificial
+
+100
+00:07:42,469 --> 00:07:43,469
+intelligence.
+
+101
+00:07:43,469 --> 00:07:49,099
+It teaches the computer to solve problems by looking at hundreds or thousands of examples,
+
+102
+00:07:49,099 --> 00:07:55,960
+learning from them, and then using that experience to solve the same problem in new situations.
+
+103
+00:07:55,960 --> 00:08:01,219
+And Deep Learning is a very special field of Machine Learning where computers can actually
+
+104
+00:08:01,219 --> 00:08:05,999
+learn and make intelligent decisions on their own.
+
+105
+00:08:05,999 --> 00:08:12,919
+Deep learning involves a deeper level of automation in comparison with most machine learning algorithms.
+
+106
+00:08:12,919 --> 00:08:17,550
+Now that we’ve completed the introduction to Machine Learning, subsequent videos will
+
+107
+00:08:17,550 --> 00:08:23,180
+focus on reviewing two main components: First, you’ll be learning about the purpose
+
+108
+00:08:23,180 --> 00:08:27,680
+of Machine Learning and where it can be applied in the real world; and
+
+109
+00:08:27,680 --> 00:08:32,990
+Second, you’ll get a general overview of Machine Learning topics, such as supervised
+
+110
+00:08:32,990 --> 00:08:39,370
+vs unsupervised learning, model evaluation and various Machine Learning algorithms.
+
+111
+00:08:39,370 --> 00:08:44,481
+So now that you have a sense with what’s in store on this journey, let’s continue
+
+112
+00:08:44,481 --> 00:08:46,920
+our exploration of Machine Learning!
+
+113
+00:08:46,920 --> 00:08:48,450
+Thanks for watching!
+
