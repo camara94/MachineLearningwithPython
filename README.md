@@ -70,3 +70,9 @@ In this course you will learn about:
 * Logistic Regression vs Linear Regressin
 * Support Vector Machine (SVM)
 * Lab & Review
+
+### Module 4 - Clustering
+* K-Means Clustering
+* Hierarchical Clustering
+* DBSCAN
+* Lab & Review
