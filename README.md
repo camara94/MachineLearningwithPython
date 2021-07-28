@@ -294,3 +294,7 @@ In this lesson you will learn about:
 ![class5knn](images/class5knn.png)
 #### What is K-Nearest Neighbor ( or KNN ) ?
 ![whatisknn](images/whatisknn.png)
+
+
+#### The K-Nearest Neighbors algorithm
+![knnalgorithm](images/knnalgorithm.png)
