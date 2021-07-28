@@ -331,6 +331,7 @@ How to build a decision tree ?
 ![decision tre](images/decisiontreealgorithm.png)
 
 ### Building Decision Trees
-
 #### How to build decision tree
 ![how to build decision tree](images/howtobuilddecisiontree.png)
+#### Which attribute is the best attribute  ?
+![best fit](images/bestfit.png)
