@@ -257,3 +257,6 @@ In this lesson you will learn about:
 ![poly](images/polynomial.png)
 #### What is non-polynomial regression ?
 ![nomlireg](images/non-linearreg.png)
+
+#### Linear vs non-linear regression
+![linearvsnonlinear](images/linearvsnonline.png)
