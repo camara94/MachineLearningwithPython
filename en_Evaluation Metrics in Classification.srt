@@ -1,0 +1,340 @@
+0
+00:00:00,440 --> 00:00:02,380
+Hello, and welcome!
+
+1
+00:00:02,380 --> 00:00:07,140
+In this video, we’ll be covering evaluation metrics for classifiers.
+
+2
+00:00:07,140 --> 00:00:09,749
+So let’s get started.
+
+3
+00:00:09,749 --> 00:00:12,829
+Evaluation metrics explain the performance of a model.
+
+4
+00:00:12,829 --> 00:00:18,490
+Let’s talk more about the model evaluation metrics that are used for classification.
+
+5
+00:00:18,490 --> 00:00:24,680
+Imagine that we have an historical dataset which shows the customer churn for a telecommunication
+
+6
+00:00:24,680 --> 00:00:25,720
+company.
+
+7
+00:00:25,720 --> 00:00:31,550
+We have trained the model, and now we want to calculate its accuracy using the test set.
+
+8
+00:00:31,550 --> 00:00:36,890
+We pass the test set to our model, and we find the predicted labels.
+
+9
+00:00:36,890 --> 00:00:40,579
+Now the question is, “How accurate is this model?”
+
+10
+00:00:40,579 --> 00:00:46,030
+Basically, we compare the actual values in the test set with the values predicted by
+
+11
+00:00:46,030 --> 00:00:50,769
+the model, to calculate the accuracy of the model.
+
+12
+00:00:50,769 --> 00:00:56,030
+Evaluation metrics provide a key role in the development of a model, as they provide insight
+
+13
+00:00:56,030 --> 00:00:59,410
+to areas that might require improvement.
+
+14
+00:00:59,410 --> 00:01:05,160
+There are different model evaluation metrics but we just talk about three of them here,
+
+15
+00:01:05,160 --> 00:01:10,110
+specifically: Jaccard index, F1-score, and Log Loss.
+
+16
+00:01:10,110 --> 00:01:16,220
+Let’s first look at one of the simplest accuracy measurements, the Jaccard index -- also
+
+17
+00:01:16,220 --> 00:01:19,110
+known as the Jaccard similarity coefficient.
+
+18
+00:01:19,110 --> 00:01:24,100
+Let’s say y shows the true labels of the churn dataset.
+
+19
+00:01:24,100 --> 00:01:28,770
+And y ̂ shows the predicted values by our classifier.
+
+20
+00:01:28,770 --> 00:01:33,980
+Then we can define Jaccard as the size of the intersection divided by the size of the
+
+21
+00:01:33,980 --> 00:01:37,390
+union of two label sets.
+
+22
+00:01:37,390 --> 00:01:44,570
+For example, for a test set of size 10, with 8 correct predictions, or 8 intersections,
+
+23
+00:01:44,570 --> 00:01:49,460
+the accuracy by the Jaccard index would be 0.66.
+
+24
+00:01:49,460 --> 00:01:54,820
+If the entire set of predicted labels for a sample strictly matches with the true set
+
+25
+00:01:54,820 --> 00:02:02,840
+of labels, then the subset accuracy is 1.0; otherwise it is 0.0.
+
+26
+00:02:02,840 --> 00:02:09,060
+Another way of looking at accuracy of classifiers is to look at a confusion matrix.
+
+27
+00:02:09,060 --> 00:02:14,190
+For example, let’s assume that our test set has only 40 rows.
+
+28
+00:02:14,190 --> 00:02:19,950
+This matrix shows the corrected and wrong predictions, in comparison with the actual
+
+29
+00:02:19,950 --> 00:02:21,030
+labels.
+
+30
+00:02:21,030 --> 00:02:27,670
+Each confusion matrix row shows the Actual/True labels in the test set, and the columns show
+
+31
+00:02:27,670 --> 00:02:30,660
+the predicted labels by classifier.
+
+32
+00:02:30,660 --> 00:02:32,750
+Look at the first row.
+
+33
+00:02:32,750 --> 00:02:38,890
+The first row is for customers whose actual churn value in the test set is 1.
+
+34
+00:02:38,890 --> 00:02:45,520
+As you can calculate, out of 40 customers, the churn value of 15 of them is 1.
+
+35
+00:02:45,520 --> 00:02:52,270
+And out of these 15, the classifier correctly predicted 6 of them as 1, and 9 of them as 0.
+
+36
+00:02:53,600 --> 00:02:59,470
+This means that for 6 customers, the actual churn value was 1, in the test set, and the
+
+37
+00:02:59,470 --> 00:03:03,410
+classifier also correctly predicted those as 1.
+
+38
+00:03:03,410 --> 00:03:10,770
+However, while the actual label of 9 customers was 1, the classifier predicted those as 0,
+
+39
+00:03:10,770 --> 00:03:12,850
+which is not very good.
+
+40
+00:03:12,850 --> 00:03:17,380
+We can consider this as an error of the model for the first row.
+
+41
+00:03:17,380 --> 00:03:20,590
+What about the customers with a churn value 0?
+
+42
+00:03:20,590 --> 00:03:23,040
+Let’s look at the second row.
+
+43
+00:03:23,040 --> 00:03:28,060
+It looks like there were 25 customers whose churn value was 0.
+
+44
+00:03:28,060 --> 00:03:34,210
+The classifier correctly predicted 24 of them as 0, and one of them wrongly predicted as 1.
+
+45
+00:03:35,210 --> 00:03:40,930
+So, it has done a good job in predicting the customers with a churn value of 0.
+
+46
+00:03:40,930 --> 00:03:46,250
+A good thing about the confusion matrix is that it shows the model’s ability to correctly
+
+47
+00:03:46,250 --> 00:03:49,360
+predict or separate the classes.
+
+48
+00:03:49,360 --> 00:03:54,960
+In the specific case of a binary classifier, such as this example, we can interpret these
+
+49
+00:03:54,960 --> 00:04:03,190
+numbers as the count of true positives, false positives, true negatives, and false negatives.
+
+50
+00:04:03,190 --> 00:04:09,060
+Based on the count of each section, we can calculate the precision and recall of each
+
+51
+00:04:09,060 --> 00:04:10,420
+label.
+
+52
+00:04:10,420 --> 00:04:15,980
+Precision is a measure of the accuracy, provided that a class label has been predicted.
+
+53
+00:04:15,980 --> 00:04:24,440
+It is defined by: precision = True Positive / (True Positive + False Positive).
+
+54
+00:04:24,440 --> 00:04:27,810
+And Recall is the true positive rate.
+
+55
+00:04:27,810 --> 00:04:35,850
+It is defined as: Recall = True Positive / (True Positive + False Negative).
+
+56
+00:04:35,850 --> 00:04:41,800
+So, we can calculate the precision and recall of each class.
+
+57
+00:04:41,800 --> 00:04:47,470
+Now we’re in the position to calculate the F1 scores for each label, based on the precision
+
+58
+00:04:47,470 --> 00:04:50,420
+and recall of that label.
+
+59
+00:04:50,420 --> 00:04:57,580
+The F1 score is the harmonic average of the precision and recall, where an F1 score reaches
+
+60
+00:04:57,580 --> 00:05:05,180
+its best value at 1 (which represents perfect precision and recall) and its worst at 0.
+
+61
+00:05:05,180 --> 00:05:12,030
+It is a good way to show that a classifier has a good value for both recall and precision.
+
+62
+00:05:12,030 --> 00:05:16,530
+It is defined using the F1-score equation.
+
+63
+00:05:16,530 --> 00:05:26,570
+For example, the F1-score for class 0 (i.e. churn=0), is 0.83, and the F1-score for class 1
+
+64
+00:05:26,570 --> 00:05:31,780
+(i.e. churn=1), is 0.55.
+
+65
+00:05:31,780 --> 00:05:38,290
+And finally, we can tell the average accuracy for this classifier is the average of the
+
+66
+00:05:38,290 --> 00:05:42,970
+F1-score for both labels, which is 0.72 in our case.
+
+67
+00:05:42,970 --> 00:05:49,780
+Please notice that both Jaccard and F1-score can be used for multi-class classifiers as
+
+68
+00:05:49,780 --> 00:05:53,320
+well, which is out of scope for this course.
+
+69
+00:05:53,320 --> 00:05:57,570
+Now let&#39;s look at another accuracy metric for classifiers.
+
+70
+00:05:57,570 --> 00:06:03,389
+Sometimes, the output of a classifier is the probability of a class label, instead of the
+
+71
+00:06:03,389 --> 00:06:04,389
+label.
+
+72
+00:06:04,389 --> 00:06:10,169
+For example, in logistic regression, the output can be the probability of customer churn,
+
+73
+00:06:10,169 --> 00:06:14,150
+i.e., yes (or equals to 1).
+
+74
+00:06:14,150 --> 00:06:18,550
+This probability is a value between 0 and 1.
+
+75
+00:06:18,550 --> 00:06:24,440
+Logarithmic loss (also known as Log loss) measures the performance of a classifier where
+
+76
+00:06:24,440 --> 00:06:29,180
+the predicted output is a probability value between 0 and 1.
+
+77
+00:06:29,180 --> 00:06:36,110
+So, for example, predicting a probability of 0.13 when the actual label is 1, would
+
+78
+00:06:36,110 --> 00:06:40,470
+be bad and would result in a high log loss.
+
+79
+00:06:40,470 --> 00:06:46,040
+We can calculate the log loss for each row using the log loss equation, which measures
+
+80
+00:06:46,040 --> 00:06:49,490
+how far each prediction is, from the actual label.
+
+81
+00:06:49,490 --> 00:06:55,479
+Then, we calculate the average log loss across all rows of the test set.
+
+82
+00:06:55,479 --> 00:07:01,259
+It is obvious that more ideal classifiers have progressively smaller values of log loss.
+
+83
+00:07:01,259 --> 00:07:06,600
+So, the classifier with lower log loss has better accuracy.
+
+84
+00:07:06,600 --> 00:07:08,159
+Thanks for watching!
+
