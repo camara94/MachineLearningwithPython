@@ -373,3 +373,5 @@ How to build a decision tree ?
 ![sigmoid](images/sigmoidfunc.png)
 #### Clarification customer churn model
 ![chrn](images/clarification.png)
+#### The training process
+![train process](images/trainprocess.png)
