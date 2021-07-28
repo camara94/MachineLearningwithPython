@@ -239,3 +239,7 @@ In this lesson you will learn about:
 ![train](images/traintestapproach.png)
 #### How to use K-fold cross-validation ?
 ![k-fold](images/k-foldcrossvalidation.png)
+
+### Evaluation Metrics in Regression 
+#### Regression accuracy
+![evaccuracy](images/evaccuracy.png)
