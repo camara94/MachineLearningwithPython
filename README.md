@@ -363,3 +363,5 @@ How to build a decision tree ?
 ### Logistic Regression vs Linear Regression
 #### Predicting customer income
 ![pre](images/predcustomerincome.png)
+#### Predicting churn using linear regression
+![churn](images/churnreg.png)
