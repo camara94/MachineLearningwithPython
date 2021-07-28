@@ -246,3 +246,8 @@ In this lesson you will learn about:
 #### What is an error of the model ?
 ![errorofmodel](images/errorofthemodel.png)
 ![error](images/error.png)
+
+### Non-Linear Regression
+#### Should we use linear regression ?
+![non-linear](images/nonlinear1.png)
+![non-linear](images/nonlinear2.png)
