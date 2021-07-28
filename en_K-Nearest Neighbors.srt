@@ -1,0 +1,448 @@
+0
+00:00:00,590 --> 00:00:02,600
+Hello and welcome!
+
+1
+00:00:02,600 --> 00:00:06,220
+In this video, we’ll be covering the k-nearest neighbors algorithm.
+
+2
+00:00:06,220 --> 00:00:09,210
+So let’s get started.
+
+3
+00:00:09,210 --> 00:00:14,530
+Imagine that a telecommunications provider has segmented its customer base by service
+
+4
+00:00:14,530 --> 00:00:20,140
+usage patterns, categorizing the customers into four groups.
+
+5
+00:00:20,140 --> 00:00:25,470
+If demographic data can be used to predict group membership, the company can customize
+
+6
+00:00:25,470 --> 00:00:29,010
+offers for individual prospective customers.
+
+7
+00:00:29,010 --> 00:00:32,160
+This is a classification problem.
+
+8
+00:00:32,160 --> 00:00:38,140
+That is, given the dataset, with predefined labels, we need to build a model to be used
+
+9
+00:00:38,140 --> 00:00:42,950
+to predict the class of a new or unknown case.
+
+10
+00:00:42,950 --> 00:00:49,510
+The example focuses on using demographic data, such as region, age, and marital status, to
+
+11
+00:00:49,510 --> 00:00:52,020
+predict usage patterns.
+
+12
+00:00:52,020 --> 00:00:57,879
+The target field, called custcat, has four possible values that correspond to the four
+
+13
+00:00:57,879 --> 00:01:06,670
+customer groups, as follows: Basic Service, E-Service, Plus Service, and Total Service.
+
+14
+00:01:06,670 --> 00:01:13,479
+Our objective is to build a classifier, for example using the rows 0 to 7, to predict
+
+15
+00:01:13,479 --> 00:01:15,319
+the class of row 8.
+
+16
+00:01:15,319 --> 00:01:21,889
+We will use a specific type of classification called K-nearest neighbor.
+
+17
+00:01:21,889 --> 00:01:27,700
+Just for sake of demonstration, let’s use only two fields as predictors - specifically,
+
+18
+00:01:27,700 --> 00:01:32,640
+Age and Income, and then plot the customers based on their group membership.
+
+19
+00:01:32,640 --> 00:01:39,319
+Now, let’s say that we have a new customer, for example, record number 8 with a known
+
+20
+00:01:39,319 --> 00:01:41,430
+age and income.
+
+21
+00:01:41,430 --> 00:01:45,240
+How can we find the class of this customer?
+
+22
+00:01:45,240 --> 00:01:51,969
+Can we find one of the closest cases and assign the same class label to our new customer?
+
+23
+00:01:51,969 --> 00:01:58,770
+Can we also say that the class of our new customer is most probably group 4 (i.e. total
+
+24
+00:01:58,770 --> 00:02:02,719
+service) because its nearest neighbor is also of class 4?
+
+25
+00:02:02,719 --> 00:02:04,250
+Yes, we can.
+
+26
+00:02:04,250 --> 00:02:07,969
+In fact, it is the first-nearest neighbor.
+
+27
+00:02:07,969 --> 00:02:14,349
+Now, the question is, “To what extent can we trust our judgment, which is based on the
+
+28
+00:02:14,349 --> 00:02:16,140
+first nearest neighbor?”
+
+29
+00:02:16,140 --> 00:02:21,549
+It might be a poor judgment, especially if the first nearest neighbor is a very specific
+
+30
+00:02:21,549 --> 00:02:24,459
+case, or an outlier, correct?
+
+31
+00:02:24,459 --> 00:02:28,060
+Now, let’s look at our scatter plot again.
+
+32
+00:02:28,060 --> 00:02:34,200
+Rather than choose the first nearest neighbor, what if we chose the five nearest neighbors,
+
+33
+00:02:34,200 --> 00:02:39,269
+and did a majority vote among them to define the class of our new customer?
+
+34
+00:02:39,269 --> 00:02:44,980
+In this case, we’d see that three out of five nearest neighbors tell us to go for class
+
+35
+00:02:44,980 --> 00:02:47,400
+3, which is ”Plus service.”
+
+36
+00:02:47,400 --> 00:02:49,930
+Doesn’t this make more sense?
+
+37
+00:02:49,930 --> 00:02:52,790
+Yes, in fact, it does!
+
+38
+00:02:52,790 --> 00:02:58,439
+In this case, the value of K in the k-nearest neighbors algorithm is 5.
+
+39
+00:02:58,439 --> 00:03:04,110
+This example highlights the intuition behind the k-nearest neighbors algorithm.
+
+40
+00:03:04,110 --> 00:03:08,870
+Now, let’s define the k-nearest neighbors.
+
+41
+00:03:08,870 --> 00:03:15,359
+The k-nearest-neighbors algorithm is a classification algorithm that takes a bunch of labelled points
+
+42
+00:03:15,359 --> 00:03:19,469
+and uses them to learn how to label other points.
+
+43
+00:03:19,469 --> 00:03:24,420
+This algorithm classifies cases based on their similarity to other cases.
+
+44
+00:03:24,420 --> 00:03:31,249
+In k-nearest neighbors, data points that are near each other are said to be “neighbors.”
+
+45
+00:03:31,249 --> 00:03:37,879
+K-nearest neighbors is based on this paradigm: “Similar cases with the same class labels
+
+46
+00:03:37,879 --> 00:03:39,560
+are near each other.”
+
+47
+00:03:39,560 --> 00:03:45,730
+Thus, the distance between two cases is a measure of their dissimilarity.
+
+48
+00:03:45,730 --> 00:03:50,969
+There are different ways to calculate the similarity, or conversely, the distance or
+
+49
+00:03:50,969 --> 00:03:53,700
+dissimilarity of two data points.
+
+50
+00:03:53,700 --> 00:03:57,709
+For example, this can be done using Euclidian distance.
+
+51
+00:03:57,709 --> 00:04:02,420
+Now, let’s see how the k-nearest neighbors algorithm actually works.
+
+52
+00:04:02,420 --> 00:04:08,930
+In a classification problem, the k-nearest neighbors algorithm works as follows:
+
+53
+00:04:09,930 --> 00:04:13,870
+1. Pick a value for K.
+
+54
+00:04:13,870 --> 00:04:20,769
+2. Calculate the distance from the new case (holdout from each of the cases in the dataset).
+
+55
+00:04:22,139 --> 00:04:27,530
+3. Search for the K observations in the training data that are ‘nearest’ to the measurements
+
+56
+00:04:27,530 --> 00:04:30,020
+of the unknown data point.
+
+57
+00:04:31,300 --> 00:04:36,639
+And 4, predict the response of the unknown data point using the most popular response value from
+
+58
+00:04:36,639 --> 00:04:39,410
+the K nearest neighbors.
+
+59
+00:04:39,410 --> 00:04:43,830
+There are two parts in this algorithm that might be a bit confusing.
+
+60
+00:04:43,830 --> 00:04:51,390
+First, how to select the correct K; and second, how to compute the similarity between cases,
+
+61
+00:04:51,390 --> 00:04:53,780
+for example, among customers?
+
+62
+00:04:53,780 --> 00:05:00,470
+Let’s first start with second concern, that is, how can we calculate the similarity between
+
+63
+00:05:00,470 --> 00:05:03,419
+two data points?
+
+64
+00:05:03,419 --> 00:05:07,650
+Assume that we have two customers, customer 1 and customer 2.
+
+65
+00:05:07,650 --> 00:05:13,900
+And, for a moment, assume that these 2 customers have only one feature, Age.
+
+66
+00:05:13,900 --> 00:05:19,970
+We can easily use a specific type of Minkowski distance to calculate the distance of these
+
+67
+00:05:19,970 --> 00:05:21,400
+2 customers.
+
+68
+00:05:21,400 --> 00:05:25,080
+It is indeed, the Euclidian distance.
+
+69
+00:05:25,080 --> 00:05:33,690
+Distance of x1 from x2 is root of 34 minus 30 to power of 2, which is 4.
+
+70
+00:05:33,690 --> 00:05:40,009
+What about if we have more than one feature, for example Age and Income?
+
+71
+00:05:40,009 --> 00:05:46,410
+If we have income and age for each customer, we can still use the same formula, but this
+
+72
+00:05:46,410 --> 00:05:50,669
+time, we’re using it in a 2-dimensional space.
+
+73
+00:05:50,669 --> 00:05:56,169
+We can also use the same distance matrix for multi-dimensional vectors.
+
+74
+00:05:56,169 --> 00:06:02,389
+Of course, we have to normalize our feature set to get the accurate dissimilarity measure.
+
+75
+00:06:02,389 --> 00:06:07,780
+There are other dissimilarity measures as well that can be used for this purpose but,
+
+76
+00:06:07,780 --> 00:06:13,699
+as mentioned, it is highly dependent on data type and also the domain that classification
+
+77
+00:06:13,699 --> 00:06:16,129
+is done for it.
+
+78
+00:06:16,129 --> 00:06:22,250
+As mentioned, K in k-nearest neighbors, is the number of nearest neighbors to examine.
+
+79
+00:06:22,250 --> 00:06:25,909
+It is supposed to be specified by the user.
+
+80
+00:06:25,909 --> 00:06:28,720
+So, how do we choose the right K?
+
+81
+00:06:28,720 --> 00:06:35,990
+Assume that we want to find the class of the customer noted as question mark on the chart.
+
+82
+00:06:35,990 --> 00:06:42,710
+What happens if we choose a very low value of K, let’s say, k=1?
+
+83
+00:06:42,710 --> 00:06:47,140
+The first nearest point would be Blue, which is class 1.
+
+84
+00:06:47,140 --> 00:06:52,789
+This would be a bad prediction, since more of the points around it are Magenta, or class 4.
+
+85
+00:06:53,789 --> 00:06:59,879
+In fact, since its nearest neighbor is Blue, we can say that we captured the noise in the
+
+86
+00:06:59,879 --> 00:07:04,889
+data, or we chose one of the points that was an anomaly in the data.
+
+87
+00:07:04,889 --> 00:07:12,039
+A low value of K causes a highly complex model as well, which might result in over-fitting
+
+88
+00:07:12,039 --> 00:07:13,750
+of the model.
+
+89
+00:07:13,750 --> 00:07:20,880
+It means the prediction process is not generalized enough to be used for out-of-sample cases.
+
+90
+00:07:20,880 --> 00:07:26,199
+Out-of-sample data is data that is outside of the dataset used to train the model.
+
+91
+00:07:26,199 --> 00:07:31,350
+In other words, it cannot be trusted to be used for prediction of unknown samples.
+
+92
+00:07:31,350 --> 00:07:37,800
+It’s important to remember that over-fitting is bad, as we want a general model that works
+
+93
+00:07:37,800 --> 00:07:42,210
+for any data, not just the data used for training.
+
+94
+00:07:42,210 --> 00:07:47,699
+Now, on the opposite side of the spectrum, if we choose a very high value of K, such
+
+95
+00:07:47,699 --> 00:07:52,639
+as K=20, then the model becomes overly generalized.
+
+96
+00:07:52,639 --> 00:07:57,150
+So, how we can find the best value for K?
+
+97
+00:07:57,150 --> 00:08:01,830
+The general solution is to reserve a part of your data for testing the accuracy of the
+
+98
+00:08:01,830 --> 00:08:02,830
+model.
+
+99
+00:08:02,830 --> 00:08:09,969
+Once you’ve done so, choose k =1, and then use the training part for modeling, and calculate
+
+100
+00:08:09,969 --> 00:08:15,080
+the accuracy of prediction using all samples in your test set.
+
+101
+00:08:15,080 --> 00:08:21,090
+Repeat this process, increasing the k, and see which k is best for your model.
+
+102
+00:08:21,090 --> 00:08:28,289
+For example, in our case, k=4 will give us the best accuracy.
+
+103
+00:08:28,289 --> 00:08:34,170
+Nearest neighbors analysis can also be used to compute values for a continuous target.
+
+104
+00:08:34,170 --> 00:08:40,190
+In this situation, the average or median target value of the nearest neighbors is used to
+
+105
+00:08:40,190 --> 00:08:44,090
+obtain the predicted value for the new case.
+
+106
+00:08:44,090 --> 00:08:49,480
+For example, assume that you are predicting the price of a home based on its feature set,
+
+107
+00:08:49,480 --> 00:08:55,440
+such as number of rooms, square footage, the year it was built, and so on.
+
+108
+00:08:55,440 --> 00:09:01,340
+You can easily find the three nearest neighbor houses, of course -- not only based on distance,
+
+109
+00:09:01,340 --> 00:09:06,580
+but also based on all the attributes, and then predict the price of the house, as the
+
+110
+00:09:06,580 --> 00:09:09,450
+median of neighbors.
+
+111
+00:09:09,450 --> 00:09:12,540
+This concludes this video. Thanks for watching!
+
