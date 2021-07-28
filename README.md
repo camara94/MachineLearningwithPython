@@ -218,3 +218,5 @@ In this lesson you will learn about:
 ![mse](images/mse.png)
 #### Estimating multiple linear regression parameters
 ![estimating](images/estimatingmultiplelinear.png)
+#### Making prediction with multiple linear regression
+![makingpred](images/makingprediction.png)
