@@ -341,3 +341,5 @@ How to build a decision tree ?
 ![best one](images/besone.png)
 #### Is 'Cholesterol' the best attribute ?
 ![best attribute](images/bestattribute.png)
+#### What about 'Sexe' ? 
+![sex attribute](images/sexattribute.png)
