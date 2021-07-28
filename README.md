@@ -356,3 +356,5 @@ How to build a decision tree ?
 ![whatislogistic](images/whatslogistic.png)
 #### Logistic regression applications
 ![whatislogistic](images/logisticapplication.png)
+#### When is logistic regression suitables ?
+![when](images/whenlogisticregressionsuitable.png)
