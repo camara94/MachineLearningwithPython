@@ -308,4 +308,5 @@ In this lesson you will learn about:
 ### Evaluation Metrics in Classification
 #### Classification accuracy
 ![accuracy1](images/accuracy1.png)
-
+#### Jaccard index
+![jaccardindex](images/jaccardindex.png)
