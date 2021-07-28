@@ -272,3 +272,5 @@ In this lesson you will learn about:
 ### Intro to Classification
 #### What is classification ?
 ![whatis](images/whatisclassification.png)
+#### How does classification work ?
+![classificationdef](images/classificationdef.png)
