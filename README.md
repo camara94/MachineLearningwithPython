@@ -318,3 +318,12 @@ In this lesson you will learn about:
 ### Intro to Decision Trees
 #### What is decision tree ?
 ![decision tree](images/whatisdecisiontrees.png)
+#### How to build a decision tree ?
+![build decision tree](images/builddecisiontree.png)
+How to build a decision tree ?
+
+#### Building a decision tree with the training set
+![decisiontree](images/decisiontreegraph.png)
+* Each **internal node** corresponds to a test
+* Each **branch corresponds** to a result of the test
+* Each **leaf node** assigns a classification
