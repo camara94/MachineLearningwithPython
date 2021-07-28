@@ -220,3 +220,5 @@ In this lesson you will learn about:
 ![estimating](images/estimatingmultiplelinear.png)
 #### Making prediction with multiple linear regression
 ![makingpred](images/makingprediction.png)
+#### A&A - on multiple linear regression
+![q&a](images/qeta.png)
