@@ -144,3 +144,7 @@ In this lesson you will learn about:
 ![labeleddata](images/labeleddata.png)
 #### Type of supervised learning
 ![typeofsupervisedlearning](images/typeofsupervisedlearning.png)
+
+#### What is classification ?
+![classification](images/classification.png)
+
