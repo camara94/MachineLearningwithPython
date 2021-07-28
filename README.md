@@ -354,3 +354,5 @@ How to build a decision tree ?
 ### Intro to Logistic Regression
 #### What is logistic regression ?
 ![whatislogistic](images/whatslogistic.png)
+#### Logistic regression applications
+![whatislogistic](images/logisticapplication.png)
