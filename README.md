@@ -290,3 +290,5 @@ In this lesson you will learn about:
 ![intro knn](images/introknn.png)
 #### Determining the class unsing 1<sup>st</sup>  KNN
 ![classfirst](images/classfirst.png)
+#### Determining the class unsing 5 KNNs
+![class5knn](images/class5knn.png)
