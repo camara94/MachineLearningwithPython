@@ -214,3 +214,5 @@ In this lesson you will learn about:
 #### Predicting continuous values with multiple linear regression
 ![mum](images/multiplemodel.png)
 ![mum](images/multiplemodel2.png)
+#### Using MSE to expose the errors in the model
+![mse](images/mse.png)
