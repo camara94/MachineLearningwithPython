@@ -300,3 +300,5 @@ In this lesson you will learn about:
 ![dimensional space](images/dimensionalspace1.png)
 ##### multi-dimensional space
 ![multidimensionalspace](images/multidimensionalspace.png)
+#### What is the best value of K for KNN ?
+![bestkknn](images/bestkknn.png)
