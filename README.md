@@ -375,3 +375,6 @@ How to build a decision tree ?
 ![chrn](images/clarification.png)
 #### The training process
 ![train process](images/trainprocess.png)
+### Logistic Regression - Training
+#### General cost function
+![cost function](images/costfunction.png)
