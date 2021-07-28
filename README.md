@@ -140,3 +140,5 @@ In this lesson you will learn about:
 ## Supervised vs Unsupervised
 ### What is supervised learning
 ![supervised learning](images/whatissupervisedlearning.png)
+#### Teaching the model with labeled data
+![labeleddata](images/labeleddata.png)
