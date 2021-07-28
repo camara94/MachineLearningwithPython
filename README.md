@@ -189,3 +189,5 @@ In this lesson you will learn about:
 ![dataset](images/dataset.png)
 #### Linear regression topology
 ![topology](images/topologyofreg.png)
+#### How does linear regression works ?
+![linear](images/lineargreg.png)
