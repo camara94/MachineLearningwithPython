@@ -369,3 +369,7 @@ How to build a decision tree ?
 ![linearreg](images/linearregproblems.png)
 #### The problem with using linear regression
 ![pro](images/problemusingreg.png)
+#### Sigmoid function in logistic regression
+![sigmoid](images/sigmoidfunc.png)
+#### Clarification customer churn model
+![chrn](images/clarification.png)
