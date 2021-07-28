@@ -148,3 +148,6 @@ In this lesson you will learn about:
 #### What is classification ?
 ![classification](images/classification.png)
 
+#### What is regression ?
+![regression](images/regression.png)
+
