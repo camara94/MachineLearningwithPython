@@ -230,3 +230,5 @@ In this lesson you will learn about:
 ![best approach](images/bestapproach.png)
 #### Calculating the accuracy of a model
 ![calcultatingaccuracy](images/calcultatingaccuracy.png)
+#### Train and test on the same dataset
+![train and test](images/trainandtest.png)
