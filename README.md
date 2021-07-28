@@ -226,3 +226,5 @@ In this lesson you will learn about:
 ### Model Evaluation in Regression Model
 #### Model evaluation approaches
 ![evaluation approach](images/evaluationapproach.png)
+#### Best approach for most accurate result ?
+![best approach](images/bestapproach.png)
