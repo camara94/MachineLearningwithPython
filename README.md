@@ -310,3 +310,5 @@ In this lesson you will learn about:
 ![accuracy1](images/accuracy1.png)
 #### Jaccard index
 ![jaccardindex](images/jaccardindex.png)
+#### F1-score
+![f-score](images/f-score.png)
