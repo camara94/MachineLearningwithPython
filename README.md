@@ -159,3 +159,12 @@ In this lesson you will learn about:
 
 #### Supervised vs unsupervised learning
 ![supervisedvsunsupervisedlearning](images/supervisedvsunsupervisedlearning.png)
+
+## Module 2
+### Learning Objectives
+In this lesson you will learn about:
+* Regression Algorithms 
+* Model Evaluation 
+* Model Evaluation: Overfitting & Underfitting
+* Understanding Different Evaluation Models
+* Simple Linear Regression
