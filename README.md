@@ -293,8 +293,8 @@ In this lesson you will learn about:
 #### Determining the class unsing 5 KNNs
 ![class5knn](images/class5knn.png)
 #### What is K-Nearest Neighbor ( or KNN ) ?
-![whatisknn](images/whatisknn.png)
-
-
-#### The K-Nearest Neighbors algorithm
+![whatisknn](images/whatisknn.png)#### The K-Nearest Neighbors algorithm
 ![knnalgorithm](images/knnalgorithm.png)
+#### Calculating the similarity / distance in 
+##### 1 -dimensional space
+![dimensional space](images/dimensionalspace1.png)
