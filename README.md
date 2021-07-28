@@ -302,3 +302,5 @@ In this lesson you will learn about:
 ![multidimensionalspace](images/multidimensionalspace.png)
 #### What is the best value of K for KNN ?
 ![bestkknn](images/bestkknn.png)
+#### Computing continuous target using KNN
+![useknninregression](images/useknninregression.png)
