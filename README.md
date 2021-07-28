@@ -327,3 +327,5 @@ How to build a decision tree ?
 * Each **internal node** corresponds to a test
 * Each **branch corresponds** to a result of the test
 * Each **leaf node** assigns a classification
+#### Decision tree learning algorithm
+![decision tre](images/decisiontreealgorithm.png)
