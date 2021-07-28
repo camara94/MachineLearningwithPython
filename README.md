@@ -195,3 +195,6 @@ In this lesson you will learn about:
 ![simplelinear](images/simplelinear.png)
 #### How to find the best fit ?
 ![fit](images/fit.png)
+#### Estimating the parameters
+![theata1](images/thata1.png)
+![theta0](images/theta0.png)
