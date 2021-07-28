@@ -274,3 +274,5 @@ In this lesson you will learn about:
 ![whatis](images/whatisclassification.png)
 #### How does classification work ?
 ![classificationdef](images/classificationdef.png)
+#### Example of multi-class classification
+![multiclass](images/multicalssclassification.png)
