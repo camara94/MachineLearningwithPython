@@ -142,3 +142,5 @@ In this lesson you will learn about:
 ![supervised learning](images/whatissupervisedlearning.png)
 #### Teaching the model with labeled data
 ![labeleddata](images/labeleddata.png)
+#### Type of supervised learning
+![typeofsupervisedlearning](images/typeofsupervisedlearning.png)
