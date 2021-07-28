@@ -281,3 +281,7 @@ In this lesson you will learn about:
 
 #### Classification applications
 ![classificationapplication](images/classificationapplication.png)
+
+
+#### Classification algorithms in machine learning
+![classificationalgorithms](images/classificationalgorithms.png)
