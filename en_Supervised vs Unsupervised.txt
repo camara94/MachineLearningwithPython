@@ -1,0 +1,80 @@
+Hello, and welcome!
+In this video, we’ll introduce supervised algorithms versus unsupervised algorithms.
+So let’s get started.
+An easy way to begin grasping the concept of supervised learning is by looking directly
+at the words that make it up.
+Supervise means to observe and direct the execution of a task, project, or activity.
+Obviously, we aren’t going to be supervising a person…
+Instead, we’ll be supervising a machine learning model that might be able to produce
+classification regions like we see here.
+So, how do we supervise a machine learning model?
+We do this by “teaching” the model.
+That is, we load the model with knowledge so that we can have it predict future instances.
+But … this leads to the next question, which is, “How exactly do we teach a model?”
+We teach the model by training it with some data from a labeled dataset.
+It’s important to note that the data is labeled.
+And what does a labeled dataset look like?
+Well, it can look something like this.
+This example is taken from the cancer dataset.
+As you can see, we have some historical data for patients, and we already know the class
+of each row.
+Let’s start by introducing some components of this table.
+The names up here, which are called Clump thickness, Uniformity of cell size, Uniformity
+of cell shape, Marginal adhesion, and so on, are called Attributes.
+The columns are called Features, which include the data.
+If you plot this data, and look at a single data point on a plot, it’ll have all of
+these attributes.
+That would make a row on this chart, also referred to as an observation.
+Looking directly at the value of the data, you can have two kinds.
+The first is numerical.
+When dealing with machine learning, the most commonly used data is numeric.
+The second is categorical… that is, it’s non-numeric, because it contains characters
+rather than numbers.
+In this case, it’s categorical because this dataset is made for Classification.
+There are two types of Supervised Learning techniques.
+They are: classification and regression.
+Classification is the process of predicting a discrete class label or category.
+Regression is the process of predicting a continuous value as opposed to predicting
+a categorical value in Classification.
+Look at this dataset.
+It is related to Co2 emissions of different cars.
+It includes Engine size, Cylinders, Fuel Consumption and Co2 emission of various models of automobiles.
+Given this dataset, you can use regression to predict the Co2 emission of a new car by
+using other fields, such as Engine size or number of Cylinders.
+  Since we know the meaning of supervised learning,
+what do you think unsupervised learning means?
+Yes!
+Unsupervised Learning is exactly as it sounds.
+We do not supervise the model, but we let the model work on its own to discover information
+that may not be visible to the human eye.
+It means, The Unsupervised algorithm trains on the dataset, and draws conclusions on UNLABELED
+data.
+Generally speaking, unsupervised learning has more difficult algorithms than supervised
+learning, since we know little to no information about the data, or the outcomes that are to
+be expected.
+Dimension reduction, Density estimation, Market basket analysis and Clustering are the most
+widely used unsupervised machine learning techniques.
+Dimensionality Reduction and/or feature selection play a large role in this by reducing redundant
+features to make the classification easier.
+Market basket analysis is a modelling technique based upon the theory that if you buy a certain
+group of items, you’re more likely to buy another group of items.
+Density estimation is a very simple concept that is mostly used to explore the data to
+find some structure within it.
+And finally, clustering.
+Clustering is considered to be one of the most popular unsupervised machine learning
+techniques used for grouping data points or objects that are somehow similar.
+Cluster analysis has many applications in different domains, whether it be a bank’s
+desire to segment its customers based on certain characteristics, or helping an individual
+to organize and group his/her favourite types of music!
+Generally speaking, though, Clustering is used mostly for: Discovering structure, Summarization,
+and Anomaly detection.
+So, to recap, the biggest difference between Supervised and Unsupervised Learning is that
+supervised learning deals with labeled data while Unsupervised Learning deals with unlabeled
+data.
+In supervised learning, we have machine learning algorithms for Classification and Regression.
+In unsupervised learning, we have methods such as clustering.
+In comparison to supervised learning, unsupervised learning has fewer models and fewer evaluation
+methods that can be used to ensure that the outcome of the model is accurate.
+As such, unsupervised learning creates a less controllable environment, as the machine is
+creating outcomes for us.
+Thanks for watching!
