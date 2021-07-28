@@ -187,3 +187,5 @@ In this lesson you will learn about:
 
 #### Using linear regression to predict continuous values
 ![dataset](images/dataset.png)
+#### Linear regression topology
+![topology](images/topologyofreg.png)
