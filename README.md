@@ -222,3 +222,7 @@ In this lesson you will learn about:
 ![makingpred](images/makingprediction.png)
 #### A&A - on multiple linear regression
 ![q&a](images/qeta.png)
+
+### Model Evaluation in Regression Model
+#### Model evaluation approaches
+![evaluation approach](images/evaluationapproach.png)
