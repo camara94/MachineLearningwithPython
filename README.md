@@ -268,3 +268,7 @@ In this lesson you will learn about:
 * Decision Trees 
 * Support Vector Machines
 * Logistic Regression
+
+### Intro to Classification
+#### What is classification ?
+![whatis](images/whatisclassification.png)
