@@ -193,3 +193,5 @@ In this lesson you will learn about:
 ![linear](images/lineargreg.png)
 #### Linear regression model representation
 ![simplelinear](images/simplelinear.png)
+#### How to find the best fit ?
+![fit](images/fit.png)
