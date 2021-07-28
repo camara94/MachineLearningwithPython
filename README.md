@@ -236,3 +236,7 @@ In this lesson you will learn about:
 
 #### What is training &amp; out-of-sample accuracy ?
 ![trainout](images/trainout.png)
+
+#### Train/Test split evaluation approch
+![traintest](images/traintestsplit.png)
+![train](images/traintestapproach.png)
