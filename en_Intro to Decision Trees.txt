@@ -1,0 +1,51 @@
+Hello, and welcome!
+In this video, we’re going to introduce and examine decision trees.
+So let’s get started
+What exactly is a decision tree?
+How do we use them to help us classify?
+How can I grow my own decision tree?
+These may be some of the questions that you have in mind from hearing the term, decision tree.
+Hopefully, you’ll soon be able to answer these questions, and many more, by watching
+this video!
+Imagine that you’re a medical researcher compiling data for a study.
+You’ve already collected data about a set of patients, all of whom suffered from the
+same illness.
+During their course of treatment, each patient responded to one of two medications; we’ll
+call them Drug A and Drug B. Part of your job is to build a model to find
+out which drug might be appropriate for a future patient with the same illness.
+The feature sets of this dataset are Age, Gender, Blood Pressure, and Cholesterol of
+our group of patients, and the target is the drug that each patient responded to.
+It is a sample of binary classifiers, and you can use the training part of the dataset
+to build a decision tree, and then, use it to predict the class of an unknown patient
+… in essence, to come up with a decision on which drug to prescribe to a new patient.
+Let’s see how a decision tree is built for this dataset.
+Decision trees are built by splitting the training set into distinct nodes, where one
+node contains all of, or most of, one category of the data.
+If we look at the diagram here, we can see that it’s a patient classifier.
+So, as mentioned, we want to prescribe a drug to a new patient, but the decision to choose
+drug A or B, will be influenced by the patient’s situation.
+We start with the Age, which can be Young, Middle-aged, or Senior.
+If the patient is Middle-aged, then we’ll definitely go for Drug B.
+On the other hand, if he is a Young or a Senior patient, we’ll need more details to help
+us determine which drug to prescribe.
+The additional decision variables can be things such as Cholesterol levels, Gender or Blood
+Pressure.
+For example, if the patient is Female, then we will recommend Drug A, but if the patient
+is Male, then we’ll go for Drug B. As you can see, decision trees are about testing
+an attribute and branching the cases, based on the result of the test.
+Each internal node corresponds to a test.
+And each branch corresponds to a result of the test.
+And each leaf node assigns a patient to a class.
+Now the question is how can we build such a decision tree?
+Here is the way that a decision tree is built.
+A decision tree can be constructed by considering the attributes one by one.
+First, choose an attribute from our dataset.
+Calculate the significance of the attribute in the splitting of the data.
+In the next video, we will explain how to calculate the significance of an attribute,
+to see if it’s an effective attribute or not.
+Next, split the data based on the value of the best attribute.
+Then, go to each branch and repeat it for the rest of the attributes.
+After building this tree, you can use it to predict the class of unknown cases or, in
+our case, the proper Drug for a new patient based on his/her characterestics.
+This concludes this video.
+Thanks for watching!
