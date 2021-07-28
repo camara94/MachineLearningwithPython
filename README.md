@@ -347,3 +347,5 @@ How to build a decision tree ?
 ![which](images/whichisbest.png)
 #### What is information gain ?
 ![gain](images/informationgain.png)
+#### Calculating information
+![gain](images/gain.png)
