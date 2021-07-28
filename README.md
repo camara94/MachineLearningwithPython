@@ -232,3 +232,7 @@ In this lesson you will learn about:
 ![calcultatingaccuracy](images/calcultatingaccuracy.png)
 #### Train and test on the same dataset
 ![train and test](images/trainandtest.png)
+
+
+#### What is training &amp; out-of-sample accuracy ?
+![trainout](images/trainout.png)
