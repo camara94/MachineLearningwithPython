@@ -358,3 +358,5 @@ How to build a decision tree ?
 ![whatislogistic](images/logisticapplication.png)
 #### When is logistic regression suitables ?
 ![when](images/whenlogisticregressionsuitable.png)
+#### Building a model for customer churn
+![model](images/buildingmodel.png)
