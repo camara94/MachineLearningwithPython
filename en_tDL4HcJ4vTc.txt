@@ -1,0 +1,163 @@
+Hello, and welcome! In this video we will learn the difference
+between linear regression and logistic regression. We go over linear regression and see why it
+cannot be used properly for some binary classification problems.
+We also look at the Sigmoid function, which is the main part of logistic regression.
+Let’s start.
+Let’s look at the telecommunication dataset again.
+The goal of logistic regression is to build a model to predict the class of each customer,
+and also the probability of each sample belonging to a class.
+Ideally, we want to build a model, y^, that can estimate that the class of a customer
+is 1, given its features, x. I want to emphasize that y is the “labels
+vector,” also called “actual values” that we would like to predict, and y^ is the
+vector of the predicted values by our model. Mapping the class labels to integer numbers,
+can we use linear regression to solve this problem?
+First, let’s recall how linear regression works to better understand logistic regression.
+Forget about the churn prediction for a minute, and assume our goal is to predict the income
+of customers in the dataset. This means that instead of predicting churn,
+which is a categorical value, let’s predict income, which is a continuous value.
+So, how can we do this? Let’s select an independent variable, such
+as customer age, and predict a dependent variable, such as income.
+Of course we can have more features, but for the sake of simplicity, let’s just take
+one feature here. We can plot it, and show age as an independent
+variable, and income as the target value we would like to predict.
+With linear regression, you can fit a line or polynomial through the data.
+We can find this line through the training of our model, or calculating it mathematically
+based on the sample sets. We’ll say this is a straight line through
+the sample set. This line has an equation shown as  a+b_x1.
+Now, use this line to predict the continuous value y, that is, use this line to predict
+the income of an unknown customer based on his or her age.
+And it is done.
+What if we want to predict churn? Can we use the same technique to predict a
+categorical field such as churn? OK, let’s see.
+Say we’re given data on customer churn and our goal this time is to predict the churn
+of customers based on their age. We have a feature, age denoted as x1, and
+a categorical feature, churn, with two classes: churn is yes and churn is no.
+As mentioned, we can map yes and no to integer values, 0 and 1.
+How can we model it now? Well, graphically, we could represent our
+data with a scatter plot. But this time we have only 2 values for the
+y axis. In this plot, class zero is denoted in red
+and class one is denoted in blue. Our goal here is to make a model based on
+existing data, to predict if a new customer is red or blue.
+Let’s do the same technique that we used for linear regression here to see if we can
+solve the problem for a categorical attribute, such as churn.
+With linear regression, you again can fit a polynomial through the data, which is shown
+traditionally as a + b_x. This polynomial can also be shown traditionally
+as θ_0 + θ_1 x_1. This line has 2 parameters, which are shown
+with vector θ, where the values of the vector are θ_0 and θ_1.
+We can also show the equation of this line formally as θ^T X.
+And generally, we can show the equation for a multi-dimensional space as θ^T X, where
+θ is the parameters of the line in 2-dimensional space, or parameters of a plane in 3-dimensional
+space, and so on. As θ is a vector of parameters, and is supposed
+to be multiplied by X, it is shown conventionally as T^θ.
+θ is also called the “weight vector” or “confidences of the equation” -- with
+both of these terms used interchangeably. And X is the feature set, which represents
+a customer. Anyway, given a dataset, all the feature sets
+X, θ parameters, can be calculated through an optimization algorithm or mathematically,
+which results in the equation of the fitting line.
+For example, the parameters of this line are -1 and 0.1 and the equation for the line is
+-1 + 0.1 x1.
+Now, we can use this regression line to predict the churn of the new customer.
+For example, for our customer, or let’s say a data point with x value of age=13, we
+can plug the value into the line formula, and the y value is calculated and returns
+a number. For instance, for p1 point we have:
+θ^T X = -1 + 0.1 x x_1 = -1 + 0.1 x 13
+= 0.3 We can show it on our graph.
+Now we can define a threshold here, for example at 0.5, to define the class.
+So, we write a rule here for our model, y^,
+which allows us to separate class 0 from class 1.
+If the value of θ^T X is less than 0.5, then the class is 0, otherwise, if the value of
+θ^T X is more than 0.5, then the class is 1.
+And because our customer’s y value is less than the threshold, we can say it belongs
+to class 0, based on our model. But there is one problem here; what is the
+probability that this customer belongs to class 0?
+As you can see, it’s not the best model to solve this problem.
+Also, there are some other issues, which verify that linear regression is not the proper method
+for classification problems.
+So, as mentioned, if we use the regression line to calculate the class of a point, it
+always returns a number, such as 3, or -2, and so on.
+Then, we should use a threshold, for example, 0.5, to assign that point to either class
+of 0 or 1. This threshold works as a step function that
+outputs 0 or 1, regardless of how big or small, positive or negative, the input is.
+So, using the threshold, we can find the class of a record.
+Notice that in the step function, no matter how big the value is, as long as it’s greater
+than 0.5, it simply equals 1. And vice versa, regardless of how small the value y is, the
+output would be zero if it is less than 0.5. In other words, there is no difference between
+a customer who has a value of one or 1000; the outcome would be 1.
+Instead of having this step function, wouldn’t it be nice if we had a smoother line - one
+that would project these values between zero and one?
+Indeed, the existing method does not really give us the probability of a customer belonging
+to a class, which is very desirable. We need a method that can give us the probability
+of falling in a class as well. So, what is the scientific solution here?
+Well, if instead of using θ^T X we use a
+specific function called sigmoid, then, sigmoid of θ^T X gives us the probability of a point
+belonging to a class, instead of the value of y directly.
+I’ll explain this sigmoid function in a second, but for now, please accept that it
+will do the trick. Instead of calculating the value of θ^T X
+directly, it returns the probability that a θ^T X is very big or very small.
+It always returns a value between 0 and 1 depending on how large the θ^T X actually
+is. Now, our model is σ(θ^T X), which represents
+the probability that the output is 1, given x.
+Now the question is, “What is the sigmoid function?”
+Let me explain in detail what sigmoid really is.
+The sigmoid function, also called the logistic function, resembles the step function and
+is used by the following expression in the logistic regression.
+The sigmoid function looks a bit complicated at first, but don’t worry about remembering
+this equation. It’ll make sense to you after working with it.
+Notice that in the sigmoid equation, when
+θ^T X gets very big, the〖e〗^(-θ^T X) in the denominator of the fraction becomes
+almost zero, and the value of the sigmoid function gets closer to 1.
+If θ^T X is very small, the sigmoid function gets closer to zero.
+Depicting on the in sigmoid plot, when θ^T X , gets bigger, the value of the sigmoid
+function gets closer to 1, and also, if the θ^T X is very small, the sigmoid function
+gets closer to zero. So, the sigmoid function’s output is always
+between 0 and 1, which makes it proper to interpret the results as probabilities.
+It is obvious that when the outcome of the sigmoid function gets closer to 1, the probability
+of y=1, given x, goes up, and in contrast, when the sigmoid value is closer to zero,
+the probability of y=1, given x, is very small.
+So what is the output of our model when we use the sigmoid function?
+In logistic regression, we model the probability that an input (X) belongs to the default class
+(Y=1), and we can write this formally as, P(Y=1|X).
+We can also write P(y=0|X) = 1 -P(y=1|x). For example, the probability of a customer
+staying with the company can be shown as probability of churn equals 1 given a customer’s income
+and age, which can be, for instance, 0.8. And the probability of churn is 0, for the
+same customer, given a customer’s income and age can be calculated as 1-0.8=0.2.
+So, now, our job is to train the model to set its parameter values in such a way that
+our model is a good estimate of P(y=1∣x). In fact, this is what a good classifier model
+built by logistic regression is supposed to do for us.
+Also, it should be a good estimate of P(y=0∣x) that can be shown as 1-σ(θ^T X).
+Now, the question is: "How we can achieve this?"
+We can find 𝜃 through the training process, so let’s see what the training process is.
+Step 1. Initialize 𝜃 vector with random values, as with most machine learning algorithms,
+for example −1 or 2.
+Step 2. Calculate the model output, which is σ(θ^T X), for a sample customer in your
+training set. X in θ^T X is the feature vector values -- for
+example, the age and income of the customer, for instance [2,5].
+And θ is the confidence or weight that you’ve set in the previous step.
+The output of this equation is the prediction value … in other words, the probability
+that the customer belongs to class 1.
+Step 3. Compare the output of our model, y^, which could be a value of, let’s say, 0.7,
+with the actual label of the customer, which is for example, 1 for churn.
+Then, record the difference as our model’s error for this customer, which would be 1-0.7,
+which of course equals 0.3. This is the error for only one customer out of all the customers
+in the training set.
+Step. 4. Calculate the error for all customers as we did in the previous steps, and add up
+these errors. The total error is the cost of your model,
+and is calculated by the model’s cost function. The cost function, by the way, basically represents
+how to calculate the error of the model, which is the difference between the actual and the
+model’s predicted values. So, the cost shows how poorly the model is
+estimating the customer’s labels. Therefore, the lower the cost, the better
+the model is at estimating the customer’s labels correctly.
+And so, what we want to do is to try to minimize this cost.
+Step 5. But, because the initial values for θ were chosen randomly, it’s very likely
+that the cost function is very high. So, we change the 𝜃 in such a way to hopefully
+reduce the total cost.
+Step 6. After changing the values of θ, we go back to step 2.
+Then we start another iteration, and calculate the cost of the model again.
+And we keep doing those steps over and over, changing the values of θ each time, until
+the cost is low enough. So, this brings up two questions: first, "How
+can we change the values of θ so that the cost is reduced across iterations?"
+And second, "When should we stop the iterations?" There are different ways to change the values
+of θ, but one of the most popular ways is gradient descent.
+Also, there are various ways to stop iterations, but essentially you stop training by calculating
+the accuracy of your model, and stop it when it’s satisfactory.
+Thanks for watching this video!
