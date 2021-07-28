@@ -345,3 +345,5 @@ How to build a decision tree ?
 ![sex attribute](images/sexattribute.png)
 #### Which attribute is the best ?
 ![which](images/whichisbest.png)
+#### What is information gain ?
+![gain](images/informationgain.png)
