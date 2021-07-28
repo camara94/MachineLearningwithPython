@@ -182,3 +182,8 @@ In this lesson you will learn about:
 
 #### Regression algorithms
 ![regalg](images/regrssionalgorithms.png)
+
+### Simple Linear Regression
+
+#### Using linear regression to predict continuous values
+![dataset](images/dataset.png)
