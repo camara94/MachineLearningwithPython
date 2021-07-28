@@ -282,6 +282,9 @@ In this lesson you will learn about:
 #### Classification applications
 ![classificationapplication](images/classificationapplication.png)
 
-
 #### Classification algorithms in machine learning
 ![classificationalgorithms](images/classificationalgorithms.png)
+
+### K-Nearest Neighbors
+#### Intro to KNN
+![intro knn](images/introknn.png)
