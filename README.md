@@ -202,3 +202,6 @@ In this lesson you will learn about:
 
 #### Predictions with linear regression
 ![pred](images/prediction.png)
+
+#### Pros of linear regression
+![pros](images/pros.png)
