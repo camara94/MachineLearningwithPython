@@ -251,3 +251,5 @@ In this lesson you will learn about:
 #### Should we use linear regression ?
 ![non-linear](images/nonlinear1.png)
 ![non-linear](images/nonlinear2.png)
+#### Different types of regression
+![typeofnonlinear](images/typeofnonlinear.png)
