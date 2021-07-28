@@ -337,6 +337,7 @@ How to build a decision tree ?
 ![best fit](images/bestfit.png)
 #### Entropy
 ![pntropy](images/entropy.png)
-
 #### With attribute is the best one to use ?
 ![best one](images/besone.png)
+#### Is 'Cholesterol' the best attribute ?
+![best attribute](images/bestattribute.png)
