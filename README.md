@@ -365,3 +365,5 @@ How to build a decision tree ?
 ![pre](images/predcustomerincome.png)
 #### Predicting churn using linear regression
 ![churn](images/churnreg.png)
+#### Linear regression classification problems ?
+![linearreg](images/linearregproblems.png)
