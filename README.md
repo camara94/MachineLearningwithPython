@@ -292,3 +292,5 @@ In this lesson you will learn about:
 ![classfirst](images/classfirst.png)
 #### Determining the class unsing 5 KNNs
 ![class5knn](images/class5knn.png)
+#### What is K-Nearest Neighbor ( or KNN ) ?
+![whatisknn](images/whatisknn.png)
