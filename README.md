@@ -360,3 +360,6 @@ How to build a decision tree ?
 ![when](images/whenlogisticregressionsuitable.png)
 #### Building a model for customer churn
 ![model](images/buildingmodel.png)
+### Logistic Regression vs Linear Regression
+#### Predicting customer income
+![pre](images/predcustomerincome.png)
