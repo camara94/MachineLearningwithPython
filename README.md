@@ -174,3 +174,5 @@ In this lesson you will learn about:
 ![reg](images/reg.png)
 #### What is a regression model ?
 ![model](images/model.png)
+#### Types of regression
+![type of regression](images/typeofreg.png)
