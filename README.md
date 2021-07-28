@@ -207,3 +207,8 @@ In this lesson you will learn about:
 ![pros](images/pros.png)
 #### Data Source Lab 2
 [https://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64](https://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64)
+
+### Multiple Linear Regression 
+
+#### Examples of  multiple linear regression
+![mul](images/mulplelinear.png)
