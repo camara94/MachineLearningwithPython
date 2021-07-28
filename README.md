@@ -134,3 +134,5 @@ In this lesson you will learn about:
 ![python](images/librariespythonforml.png)
 ### More about scikit-learn
 ![sklear](images/scikitlearning.png)
+### Scikit-learn functions
+![sklearningfunc](images/slearnfunctions.png)
