@@ -343,3 +343,5 @@ How to build a decision tree ?
 ![best attribute](images/bestattribute.png)
 #### What about 'Sexe' ? 
 ![sex attribute](images/sexattribute.png)
+#### Which attribute is the best ?
+![which](images/whichisbest.png)
