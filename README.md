@@ -118,9 +118,17 @@ In this lesson you will learn about:
 * Recommendation systems
   * Recommending items
 
-## Difference between artificial intelligence, machine learning and deep learning
+### Difference between artificial intelligence, machine learning and deep learning
 
 ![differenceaiml](images/differenceaimldk.png)
-
-## Let's get started with machine learning!
+### Let's get started with machine learning!
 ![lets](images/letstartedml.png)
+
+## Python for Machine Learning
+### Python libraries for machine learning
+* Numpy
+* Scipy
+* matplotlib
+* pandas
+* sklearn
+![python](images/librariespythonforml.png)
