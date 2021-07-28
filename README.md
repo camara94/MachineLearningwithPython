@@ -228,3 +228,5 @@ In this lesson you will learn about:
 ![evaluation approach](images/evaluationapproach.png)
 #### Best approach for most accurate result ?
 ![best approach](images/bestapproach.png)
+#### Calculating the accuracy of a model
+![calcultatingaccuracy](images/calcultatingaccuracy.png)
