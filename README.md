@@ -288,3 +288,5 @@ In this lesson you will learn about:
 ### K-Nearest Neighbors
 #### Intro to KNN
 ![intro knn](images/introknn.png)
+#### Determining the class unsing 1<sup>st</sup>  KNN
+![classfirst](images/classfirst.png)
