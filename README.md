@@ -90,17 +90,18 @@ In this lesson you will learn about:
 * Python libraries for Machine Learning
 * Supervised vs Unsupervised Learning 
 
-## Introduction to machine learning
-### What is machine learning
+## Module 1
+### Introduction to machine learning
+#### What is machine learning
 ![defml 1](images/defml1.png)
-### How machine learning works ?
+#### How machine learning works ?
 ![mlwork](images/howmlworks.png)
 ![mlwork](images/howmlworks2.png)
-### Examples of machine learning
+#### Examples of machine learning
 ![ml](images/examplesofml.png)
 ![ml](images/examplesofml2.png)
 
-### Major machine learning techniques
+#### Major machine learning techniques
 * Regression/Estimation
   * Predicting continuous values
 * Classification
@@ -118,43 +119,43 @@ In this lesson you will learn about:
 * Recommendation systems
   * Recommending items
 
-### Difference between artificial intelligence, machine learning and deep learning
+#### Difference between artificial intelligence, machine learning and deep learning
 
 ![differenceaiml](images/differenceaimldk.png)
-### Let's get started with machine learning!
+#### Let's get started with machine learning!
 ![lets](images/letstartedml.png)
 
-## Python for Machine Learning
-### Python libraries for machine learning
+### Python for Machine Learning
+#### Python libraries for machine learning
 * Numpy
 * Scipy
 * matplotlib
 * pandas
 * sklearn
 ![python](images/librariespythonforml.png)
-### More about scikit-learn
+#### More about scikit-learn
 ![sklear](images/scikitlearning.png)
-### Scikit-learn functions
+#### Scikit-learn functions
 ![sklearningfunc](images/slearnfunctions.png)
 
-## Supervised vs Unsupervised
-### What is supervised learning
+### Supervised vs Unsupervised
+#### What is supervised learning
 ![supervised learning](images/whatissupervisedlearning.png)
 #### Teaching the model with labeled data
 ![labeleddata](images/labeleddata.png)
-#### Type of supervised learning
+##### Type of supervised learning
 ![typeofsupervisedlearning](images/typeofsupervisedlearning.png)
 
-#### What is classification ?
+##### What is classification ?
 ![classification](images/classification.png)
 
-#### What is regression ?
+##### What is regression ?
 ![regression](images/regression.png)
-### What is unsupervised learning
+#### What is unsupervised learning
 
 ![unsupervisedlearning](images/unsupervisedlearning.png)
-#### What is clustering ?
+##### What is clustering ?
 ![clustering](images/clustering.png)
 
-### Supervised vs unsupervised learning
+#### Supervised vs unsupervised learning
 ![supervisedvsunsupervisedlearning](images/supervisedvsunsupervisedlearning.png)
