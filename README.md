@@ -335,3 +335,5 @@ How to build a decision tree ?
 ![how to build decision tree](images/howtobuilddecisiontree.png)
 #### Which attribute is the best attribute  ?
 ![best fit](images/bestfit.png)
+#### Entropy
+![pntropy](images/entropy.png)
