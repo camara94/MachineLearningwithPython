@@ -172,3 +172,5 @@ In this lesson you will learn about:
 ### Introduction to Regression
 #### What is regression ?
 ![reg](images/reg.png)
+#### What is a regression model ?
+![model](images/model.png)
