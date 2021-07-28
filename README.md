@@ -367,3 +367,5 @@ How to build a decision tree ?
 ![churn](images/churnreg.png)
 #### Linear regression classification problems ?
 ![linearreg](images/linearregproblems.png)
+#### The problem with using linear regression
+![pro](images/problemusingreg.png)
