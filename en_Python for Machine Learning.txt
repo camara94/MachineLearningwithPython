@@ -1,0 +1,75 @@
+Hello, and welcome!
+In this video, we’ll talk about how to use python for machine learning.
+So let’s get started.
+Python is a popular and powerful general-purpose programming language that recently emerged
+as the preferred language among data scientists.
+You can write your machine learning algorithm using python, and it works very well.
+However, there are a lot of modules and libraries already implemented in python that can make
+your life much easier.
+We try to introduce the Python packages in this course and use it in the labs to give
+you better hands-on experience.
+The first package is Numpy, which is a math library to work with n-dimensional arrays
+in Python.
+It enables you to do computation efficiently and effectively.
+It is better than regular python because of it’s amazing capabilities.
+For example, for working with arrays, dictionaries, functions, datatypes, and working with images,
+you need to know Numpy.
+SciPy is a collection of numerical algorithms and domain-specific toolboxes, including signal
+processing, optimization, statistics and much more.
+SciPy is a good library for scientific and high-performance computation.
+Matplotlib is a very popular plotting package that provides 2D plotting as well as 3D plotting.
+Basic Knowledge about these 3 packages, which are built on top of python, is a good asset
+for data scientists who want to work with real world problems.
+If you are not familiar with these packages, I recommend that you take the “Data Analysis
+with Python” course first.
+This course covers most of the useful topics in these packages.
+Pandas library, is a very high-level python library that provides high-performance, easy
+to use data structures.
+It has many functions for data importing, manipulation and analysis.
+In particular, it offers data structures and operations for manipulating numerical tables
+and time series.
+scikit-learn is a collection of algorithms and tools for machine learning, which is our
+focus here, and which you’ll learn to use with in this course.
+As we’ll be using scikit-learn quite a bit, in the labs, let me explain more about it
+and show you why it is so popular among data scientists.
+Scikit-learn is a free machine learning library for the Python programming language.
+It has most of the classification, regression and clustering algorithms, and it’s designed
+to work with the Python numerical and scientific libraries, NumPy and SciPy.
+Also, it includes very good documentation.
+On top of that, implementing machine learning models with scikit learn is really easy, with
+a few lines of python code.
+Most of the tasks that need to be done in a machine learning pipeline are implemented
+already in scikit learn, including, pre-processing of data, feature selection, feature extraction,
+train/test splitting, defining the algorithms, fitting models, tuning parameters, prediction,
+evaluation, and exporting the model.
+Let me show you an example of how scikit learn looks like when you use this library.
+You don’t have to understand the code for now, but just see how easily you can build
+a model with just a few lines of code.
+Basically, Machine learning algorithms benefit from standardization of the data set.
+If there are some outliers, or different scales fields in your data set, you have to fix them.
+The preprocessing package of scikit learn provides several common utility functions
+and transformer classes to change raw feature vectors into a suitable form of vector for
+modeling.
+You have to split your dataset into train and test sets to train your model, and then
+test the model’s accuracy separately.
+Scikit learn can split arrays or matrices into random train and test subsets for you,
+in one line of code.
+Then, you can setup your algorithm.
+For example, you can build a classifier using a support vector classification algorithm.
+We call our estimator instance clf, and initialize its parameters.
+Now, you can train your model with the train set.
+By passing our training set to the fit method, the clf model learns to classify unknown cases.
+Then, we can use our test set to run predictions.
+And, the result tells us what the class of each unknown value is.
+Also, you can use different metrics to evaluate your model accuracy, for example, using a
+confusion matrix to show the results.
+And finally, you save your model.
+You may find all or some of these machine learning terms confusing, but don’t worry,
+we will talk about all of these topics in the following videos.
+The most important point to remember is that the entire process of a Machine Learning task
+can be done simply in a few lines of code, using scikit learn.
+Please notice that, though it is possible, it would not be that easy if you want to do
+all of this using Numpy or Scipy packages.
+And of course, it needs much more coding if you use pure python programming to implement
+all of these tasks.
+Thanks for watching.
