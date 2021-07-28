@@ -198,3 +198,7 @@ In this lesson you will learn about:
 #### Estimating the parameters
 ![theata1](images/thata1.png)
 ![theta0](images/theta0.png)
+
+
+#### Predictions with linear regression
+![pred](images/prediction.png)
