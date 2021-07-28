@@ -276,3 +276,5 @@ In this lesson you will learn about:
 ![classificationdef](images/classificationdef.png)
 #### Example of multi-class classification
 ![multiclass](images/multicalssclassification.png)
+#### Classification use cases
+![classificationusecases](images/classificationusecases.png)
