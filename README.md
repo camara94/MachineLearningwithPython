@@ -136,3 +136,7 @@ In this lesson you will learn about:
 ![sklear](images/scikitlearning.png)
 ### Scikit-learn functions
 ![sklearningfunc](images/slearnfunctions.png)
+
+## Supervised vs Unsupervised
+### What is supervised learning
+![supervised learning](images/whatissupervisedlearning.png)
