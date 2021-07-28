@@ -298,3 +298,5 @@ In this lesson you will learn about:
 #### Calculating the similarity / distance in 
 ##### 1 -dimensional space
 ![dimensional space](images/dimensionalspace1.png)
+##### multi-dimensional space
+![multidimensionalspace](images/multidimensionalspace.png)
