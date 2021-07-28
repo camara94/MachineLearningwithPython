@@ -178,3 +178,7 @@ In this lesson you will learn about:
 ![type of regression](images/typeofreg.png)
 #### Application of regression
 ![applicationofregression](images/applicationofregression.png)
+
+
+#### Regression algorithms
+![regalg](images/regrssionalgorithms.png)
