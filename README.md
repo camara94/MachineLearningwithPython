@@ -191,3 +191,5 @@ In this lesson you will learn about:
 ![topology](images/topologyofreg.png)
 #### How does linear regression works ?
 ![linear](images/lineargreg.png)
+#### Linear regression model representation
+![simplelinear](images/simplelinear.png)
