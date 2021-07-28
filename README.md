@@ -255,3 +255,5 @@ In this lesson you will learn about:
 ![typeofnonlinear](images/typeofnonlinear.png)
 #### What is polynomial regression ?
 ![poly](images/polynomial.png)
+#### What is non-polynomial regression ?
+![nomlireg](images/non-linearreg.png)
