@@ -349,3 +349,6 @@ How to build a decision tree ?
 ![gain](images/informationgain.png)
 #### Calculating information
 ![gain](images/gain.png)
+
+#### Correct way to build a decision tree
+![correct](images/correctway.png)
