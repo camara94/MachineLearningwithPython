@@ -312,3 +312,5 @@ In this lesson you will learn about:
 ![jaccardindex](images/jaccardindex.png)
 #### F1-score
 ![f-score](images/f-score.png)
+#### Log Loss
+![logloss](images/logloss.png)
