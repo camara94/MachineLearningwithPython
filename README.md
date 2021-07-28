@@ -150,4 +150,7 @@ In this lesson you will learn about:
 
 #### What is regression ?
 ![regression](images/regression.png)
+### What is unsupervised learning
+
+![unsupervisedlearning](images/unsupervisedlearning.png)
 
