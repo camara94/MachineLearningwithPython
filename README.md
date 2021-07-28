@@ -260,3 +260,11 @@ In this lesson you will learn about:
 
 #### Linear vs non-linear regression
 ![linearvsnonlinear](images/linearvsnonline.png)
+
+## Module 3
+### Learning Objectives
+In this lesson you will learn about:
+* K-Nearest Neighbors
+* Decision Trees 
+* Support Vector Machines
+* Logistic Regression
