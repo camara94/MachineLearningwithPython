@@ -314,3 +314,7 @@ In this lesson you will learn about:
 ![f-score](images/f-score.png)
 #### Log Loss
 ![logloss](images/logloss.png)
+
+### Intro to Decision Trees
+#### What is decision tree ?
+![decision tree](images/whatisdecisiontrees.png)
