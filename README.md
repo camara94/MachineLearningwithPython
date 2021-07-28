@@ -278,3 +278,6 @@ In this lesson you will learn about:
 ![multiclass](images/multicalssclassification.png)
 #### Classification use cases
 ![classificationusecases](images/classificationusecases.png)
+
+#### Classification applications
+![classificationapplication](images/classificationapplication.png)
