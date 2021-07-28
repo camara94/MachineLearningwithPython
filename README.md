@@ -132,3 +132,5 @@ In this lesson you will learn about:
 * pandas
 * sklearn
 ![python](images/librariespythonforml.png)
+### More about scikit-learn
+![sklear](images/scikitlearning.png)
