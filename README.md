@@ -156,3 +156,5 @@ In this lesson you will learn about:
 #### What is clustering ?
 ![clustering](images/clustering.png)
 
+### Supervised vs unsupervised learning
+![supervisedvsunsupervisedlearning](images/supervisedvsunsupervisedlearning.png)
