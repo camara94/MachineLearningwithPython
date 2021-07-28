@@ -243,3 +243,6 @@ In this lesson you will learn about:
 ### Evaluation Metrics in Regression 
 #### Regression accuracy
 ![evaccuracy](images/evaccuracy.png)
+#### What is an error of the model ?
+![errorofmodel](images/errorofthemodel.png)
+![error](images/error.png)
