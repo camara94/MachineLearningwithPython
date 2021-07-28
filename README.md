@@ -168,3 +168,7 @@ In this lesson you will learn about:
 * Model Evaluation: Overfitting & Underfitting
 * Understanding Different Evaluation Models
 * Simple Linear Regression
+
+### Introduction to Regression
+#### What is regression ?
+![reg](images/reg.png)
