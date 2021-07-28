@@ -304,3 +304,8 @@ In this lesson you will learn about:
 ![bestkknn](images/bestkknn.png)
 #### Computing continuous target using KNN
 ![useknninregression](images/useknninregression.png)
+
+### Evaluation Metrics in Classification
+#### Classification accuracy
+![accuracy1](images/accuracy1.png)
+
