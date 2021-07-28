@@ -216,3 +216,5 @@ In this lesson you will learn about:
 ![mum](images/multiplemodel2.png)
 #### Using MSE to expose the errors in the model
 ![mse](images/mse.png)
+#### Estimating multiple linear regression parameters
+![estimating](images/estimatingmultiplelinear.png)
