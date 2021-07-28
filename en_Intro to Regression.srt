@@ -1,0 +1,256 @@
+0
+00:00:00,440 --> 00:00:02,389
+Hello, and welcome!
+
+1
+00:00:02,389 --> 00:00:05,860
+In this video, we’ll be giving a brief introduction to regression.
+
+2
+00:00:05,860 --> 00:00:08,189
+So let’s get started.
+
+3
+00:00:08,189 --> 00:00:10,019
+Look at this dataset.
+
+4
+00:00:10,019 --> 00:00:13,499
+It&#39;s related to Co2 emissions from different cars.
+
+5
+00:00:13,499 --> 00:00:20,020
+It includes Engine size, number of Cylinders, Fuel Consumption and Co2 emission from various
+
+6
+00:00:20,020 --> 00:00:22,240
+automobile models.
+
+7
+00:00:22,240 --> 00:00:28,820
+The question is, &quot;Given this dataset, can we predict the Co2 emission of a car using
+
+8
+00:00:28,820 --> 00:00:32,560
+other fields, such as EngineSize or Cylinders?&quot;
+
+9
+00:00:32,560 --> 00:00:38,350
+Let’s assume we have some historical data from different cars, and assume that a car,
+
+10
+00:00:38,350 --> 00:00:43,789
+such as in row 9, has not been manufactured yet, but we&#39;re interested in estimating its
+
+11
+00:00:43,789 --> 00:00:47,879
+approximate Co2 emission, after production.
+
+12
+00:00:47,879 --> 00:00:49,760
+Is it possible?
+
+13
+00:00:49,760 --> 00:00:56,010
+We can use regression methods to predict a continuous value, such as CO2 Emission, using
+
+14
+00:00:56,010 --> 00:00:58,200
+some other variables.
+
+15
+00:00:58,200 --> 00:01:03,889
+Indeed, regression is the process of predicting a continuous value.
+
+16
+00:01:03,889 --> 00:01:11,040
+In regression there are two types of variables: a dependent variable and one or more independent
+
+17
+00:01:11,040 --> 00:01:12,230
+variables.
+
+18
+00:01:12,230 --> 00:01:17,690
+The dependent variable can be seen as the &quot;state&quot;, &quot;target&quot; or &quot;final goal&quot; we study
+
+19
+00:01:17,690 --> 00:01:24,640
+and try to predict, and the independent variables, also known as explanatory variables, can be
+
+20
+00:01:24,640 --> 00:01:27,620
+seen as the &quot;causes&quot; of those &quot;states&quot;.
+
+21
+00:01:27,620 --> 00:01:34,720
+The independent variables are shown conventionally by x; and the dependent variable is notated
+
+22
+00:01:34,720 --> 00:01:35,720
+by y.
+
+23
+00:01:35,720 --> 00:01:44,350
+A regression model relates y, or the dependent variable, to a function of x, i.e., the independent
+
+24
+00:01:44,350 --> 00:01:45,540
+variables.
+
+25
+00:01:45,540 --> 00:01:50,281
+The key point in the regression is that our dependent value should be continuous, and
+
+26
+00:01:50,281 --> 00:01:53,000
+cannot be a discreet value.
+
+27
+00:01:53,000 --> 00:02:00,920
+However, the independent variable or variables can be measured on either a categorical or
+
+28
+00:02:00,920 --> 00:02:03,650
+continuous measurement scale.
+
+29
+00:02:03,650 --> 00:02:09,750
+So, what we want to do here is to use the historical data of some cars, using one or
+
+30
+00:02:09,750 --> 00:02:14,920
+more of their features, and from that data, make a model.
+
+31
+00:02:14,920 --> 00:02:19,890
+We use regression to build such a regression/estimation model.
+
+32
+00:02:19,890 --> 00:02:27,160
+Then the model is used to predict the expected Co2 emission for a new or unknown car.
+
+33
+00:02:27,160 --> 00:02:34,010
+Basically there are 2 types of regression models: simple regression and multiple regression.
+
+34
+00:02:34,010 --> 00:02:39,970
+Simple regression is when one independent variable is used to estimate a dependent variable.
+
+35
+00:02:39,970 --> 00:02:43,400
+It can be either linear on non-linear.
+
+36
+00:02:43,400 --> 00:02:49,250
+For example, predicting Co2emission using the variable of EngineSize.
+
+37
+00:02:49,250 --> 00:02:55,700
+Linearity of regression is based on the nature of relationship between independent and dependent
+
+38
+00:02:55,700 --> 00:02:56,840
+variables.
+
+39
+00:02:56,840 --> 00:03:02,250
+When more than one independent variable is present, the process is called multiple linear
+
+40
+00:03:02,250 --> 00:03:03,420
+regression.
+
+41
+00:03:03,420 --> 00:03:09,650
+For example, predicting Co2emission using EngineSize and the number of Cylinders in
+
+42
+00:03:09,650 --> 00:03:11,590
+any given car.
+
+43
+00:03:11,590 --> 00:03:17,740
+Again, depending on the relation between dependent and independent variables, it can be either
+
+44
+00:03:17,740 --> 00:03:20,700
+linear or non-linear regression.
+
+45
+00:03:20,700 --> 00:03:25,010
+Let’s examine some sample applications of regression.
+
+46
+00:03:25,010 --> 00:03:31,040
+Essentially, we use regression when we want to estimate a continuous value.
+
+47
+00:03:31,040 --> 00:03:38,300
+For instance, one of the applications of regression analysis could be in the area of sales forecasting.
+
+48
+00:03:38,300 --> 00:03:43,800
+You can try to predict a salesperson&#39;s total yearly sales from independent variables such
+
+49
+00:03:43,800 --> 00:03:48,300
+as age, education, and years of experience.
+
+50
+00:03:48,300 --> 00:03:54,260
+It can also be used in the field of psychology, for example, to determine individual satisfaction
+
+51
+00:03:54,260 --> 00:03:58,080
+based on demographic and psychological factors.
+
+52
+00:03:58,080 --> 00:04:03,130
+We can use regression analysis to predict the price of a house in an area, based on its
+
+53
+00:04:03,130 --> 00:04:06,580
+size, number of bedrooms, and so on.
+
+54
+00:04:06,580 --> 00:04:12,700
+We can even use it to predict employment income for independent variables, such as hours of
+
+55
+00:04:12,700 --> 00:04:20,150
+work, education, occupation, sex, age, years of experience, and so on.
+
+56
+00:04:20,149 --> 00:04:25,840
+Indeed, you can find many examples of the usefulness of regression analysis in these
+
+57
+00:04:25,840 --> 00:04:32,770
+and many other fields or domains, such as finance, healthcare, retail, and more.
+
+58
+00:04:32,770 --> 00:04:35,460
+We have many regression algorithms.
+
+59
+00:04:35,460 --> 00:04:40,490
+Each of them has its own importance and a specific condition to which their application
+
+60
+00:04:40,490 --> 00:04:42,240
+is best suited.
+
+61
+00:04:42,240 --> 00:04:46,940
+And while we&#39;ve covered just a few of them in this course, it gives you enough base knowledge
+
+62
+00:04:46,940 --> 00:04:50,520
+for you to explore different regression techniques.
+
+63
+00:04:50,520 --> 00:04:51,020
+Thanks for watching!
+
