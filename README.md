@@ -329,3 +329,8 @@ How to build a decision tree ?
 * Each **leaf node** assigns a classification
 #### Decision tree learning algorithm
 ![decision tre](images/decisiontreealgorithm.png)
+
+### Building Decision Trees
+
+#### How to build decision tree
+![how to build decision tree](images/howtobuilddecisiontree.png)
