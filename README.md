@@ -435,6 +435,7 @@ In this lesson you will learn about:
 ![onedim](images/onedimensional.png)
 #### 2-dimensional similarity / distance
 ![towdim](images/two-dimensional.png)
-
 #### Multi-dimensional similarity / distance
 ![towdim](images/multi-dimensional.png)
+#### How does K-means clustering work ?
+![k-means](images/howk-meanswork.png)
