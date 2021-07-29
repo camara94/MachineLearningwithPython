@@ -475,3 +475,6 @@ In this lesson you will learn about:
 ![how calculate](images/howcalculatedist.png)
 #### Distance between clusters
 ![distancebetweenclusters](images/distancebetweenclusters.png)
+#### Adventages vs. disadventages
+![hierachical](images/adventagevsdisadventageofhierachicalclustering.png)
+
