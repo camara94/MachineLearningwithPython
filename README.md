@@ -431,8 +431,10 @@ In this lesson you will learn about:
 ![k-means](images/k-meansalgorithms.png)
 #### Determine the simalarity or dissimilarity
 ![similarity](images/similarityanddissimilarity.png)
-
 #### 1-dimensional similarity / distance
 ![onedim](images/onedimensional.png)
 #### 2-dimensional similarity / distance
 ![towdim](images/two-dimensional.png)
+
+#### Multi-dimensional similarity / distance
+![towdim](images/multi-dimensional.png)
