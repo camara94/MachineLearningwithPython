@@ -1,0 +1,43 @@
+Hello, and welcome! In this video, we’ll look at k-Means accuracy
+and characteristics. Let’s get started.
+Let’s define the algorithm more concretely before we talk about its accuracy.
+A k-Means algorithm works by randomly placing k centroids, one for each cluster.
+The farther apart the clusters are placed, the better.
+The next step is to calculate the distance of each data point (or object) from the centroids.
+Euclidean distance is used to measure the distance from the object to the centroid.
+Please note, however, that you can also use different types of distance measurements,
+not just Euclidean distance. Euclidean distance is used because it’s
+the most popular. Then, assign each data point (or object) to
+its closest centroid, creating a group. Next, once each data point has been classified
+to a group, recalculate the position of the k centroids. The new centroid position is
+determined by the mean of all points in the group.
+Finally, this continues until the centroids no longer move.
+Now the question is, "How can we evaluate the 'goodness' of the clusters formed
+by k-Means?" In other words, "How do we calculate the accuracy
+of k-Means clustering?” One way is to compare the clusters with the
+ground truth, if it’s available. However, because k-Means is an unsupervised
+algorithm, we usually don’t have ground truth in real world problems to be used.
+But, there is still a way to say how bad each cluster is, based on the objective of the
+k-Means. This value is the average distance between
+data points within a cluster. Also, average of the distances of data points
+from their cluster centroids can be used as a metric of error for the clustering algorithm.
+Essentially, determining the number of clusters in a data set, or k, as in the k-Means algorithm,
+is a frequent problem in data clustering. The correct choice of k is often ambiguous,
+because it’s very dependent on the shape and scale of the distribution of points in
+a data set. There are some approaches to address this
+problem, but one of the techniques that is commonly used, is to run the clustering across
+the different values of K, and looking at a metric of accuracy for clustering.
+This metric can be “mean distance between data points and their cluster centroid,” which
+indicate how dense our clusters are, or to what extend we minimized the error of clustering.
+Then looking at the change of this metric, we can find the best value for k.
+But the problem is that with increasing the number of clusters, the distance of centroids
+to data points will always reduce. This means, increasing K will always decrease the “error.”
+So, the value of the metric as a function of K is plotted and the "elbow point" is determined,
+where the rate of decrease sharply shifts. It is the right K for clustering.
+This method is called the “elbow” method.
+So, let’s recap k-Means clustering: k-Means is a partitioned-based clustering, which is:
+a) Relatively efficient on medium and large sized datasets;
+b) Produces sphere-like clusters, because the clusters are shaped around the centroids;
+and c) Its drawback is that we should pre-specify
+the number of clusters, and this is not an easy task.
+Thanks for watching!

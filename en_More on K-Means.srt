@@ -1,0 +1,172 @@
+0
+00:00:00,590 --> 00:00:05,360
+Hello, and welcome! In this video, we’ll look at k-Means accuracy
+
+1
+00:00:05,360 --> 00:00:08,140
+and characteristics. Let’s get started.
+
+2
+00:00:08,140 --> 00:00:13,910
+Let’s define the algorithm more concretely before we talk about its accuracy.
+
+3
+00:00:13,910 --> 00:00:20,840
+A k-Means algorithm works by randomly placing k centroids, one for each cluster.
+
+4
+00:00:20,840 --> 00:00:24,130
+The farther apart the clusters are placed, the better.
+
+5
+00:00:24,130 --> 00:00:30,369
+The next step is to calculate the distance of each data point (or object) from the centroids.
+
+6
+00:00:30,369 --> 00:00:35,250
+Euclidean distance is used to measure the distance from the object to the centroid.
+
+7
+00:00:35,250 --> 00:00:40,090
+Please note, however, that you can also use different types of distance measurements,
+
+8
+00:00:40,090 --> 00:00:44,450
+not just Euclidean distance. Euclidean distance is used because it’s
+
+9
+00:00:44,450 --> 00:00:49,520
+the most popular. Then, assign each data point (or object) to
+
+10
+00:00:49,520 --> 00:00:56,070
+its closest centroid, creating a group. Next, once each data point has been classified
+
+11
+00:00:56,070 --> 00:01:02,550
+to a group, recalculate the position of the k centroids. The new centroid position is
+
+12
+00:01:02,550 --> 00:01:06,539
+determined by the mean of all points in the group.
+
+13
+00:01:06,539 --> 00:01:11,439
+Finally, this continues until the centroids no longer move.
+
+14
+00:01:11,439 --> 00:01:16,700
+Now the question is, "How can we evaluate the 'goodness' of the clusters formed
+
+15
+00:01:16,700 --> 00:01:20,789
+by k-Means?" In other words, "How do we calculate the accuracy
+
+16
+00:01:20,789 --> 00:01:25,179
+of k-Means clustering?” One way is to compare the clusters with the
+
+17
+00:01:25,179 --> 00:01:31,070
+ground truth, if it’s available. However, because k-Means is an unsupervised
+
+18
+00:01:31,070 --> 00:01:36,420
+algorithm, we usually don’t have ground truth in real world problems to be used.
+
+19
+00:01:36,420 --> 00:01:42,579
+But, there is still a way to say how bad each cluster is, based on the objective of the
+
+20
+00:01:42,579 --> 00:01:46,739
+k-Means. This value is the average distance between
+
+21
+00:01:46,739 --> 00:01:52,539
+data points within a cluster. Also, average of the distances of data points
+
+22
+00:01:52,539 --> 00:01:59,029
+from their cluster centroids can be used as a metric of error for the clustering algorithm.
+
+23
+00:01:59,029 --> 00:02:05,409
+Essentially, determining the number of clusters in a data set, or k, as in the k-Means algorithm,
+
+24
+00:02:05,409 --> 00:02:12,000
+is a frequent problem in data clustering. The correct choice of k is often ambiguous,
+
+25
+00:02:12,000 --> 00:02:16,290
+because it’s very dependent on the shape and scale of the distribution of points in
+
+26
+00:02:16,290 --> 00:02:20,340
+a data set. There are some approaches to address this
+
+27
+00:02:20,340 --> 00:02:25,150
+problem, but one of the techniques that is commonly used, is to run the clustering across
+
+28
+00:02:25,150 --> 00:02:31,000
+the different values of K, and looking at a metric of accuracy for clustering.
+
+29
+00:02:31,000 --> 00:02:36,620
+This metric can be “mean distance between data points and their cluster centroid,” which
+
+30
+00:02:36,620 --> 00:02:43,709
+indicate how dense our clusters are, or to what extend we minimized the error of clustering.
+
+31
+00:02:43,709 --> 00:02:49,790
+Then looking at the change of this metric, we can find the best value for k.
+
+32
+00:02:49,790 --> 00:02:55,049
+But the problem is that with increasing the number of clusters, the distance of centroids
+
+33
+00:02:55,049 --> 00:03:02,879
+to data points will always reduce. This means, increasing K will always decrease the “error.”
+
+34
+00:03:02,879 --> 00:03:10,329
+So, the value of the metric as a function of K is plotted and the "elbow point" is determined,
+
+35
+00:03:10,329 --> 00:03:16,120
+where the rate of decrease sharply shifts. It is the right K for clustering.
+
+36
+00:03:16,120 --> 00:03:19,090
+This method is called the “elbow” method.
+
+37
+00:03:19,090 --> 00:03:26,400
+So, let’s recap k-Means clustering: k-Means is a partitioned-based clustering, which is:
+
+38
+00:03:26,400 --> 00:03:30,900
+a) Relatively efficient on medium and large sized datasets;
+
+39
+00:03:30,900 --> 00:03:37,300
+b) Produces sphere-like clusters, because the clusters are shaped around the centroids;
+
+40
+00:03:37,300 --> 00:03:40,889
+and c) Its drawback is that we should pre-specify
+
+41
+00:03:40,889 --> 00:03:44,870
+the number of clusters, and this is not an easy task.
+
+42
+00:03:44,870 --> 00:03:46,270
+Thanks for watching!
+
