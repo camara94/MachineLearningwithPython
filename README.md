@@ -395,3 +395,5 @@ How to build a decision tree ?
 ![svm](images/whatissvm.png)
 #### Data transformation
 ![data transform](images/datatransform.png)
+#### Using SVM to find the hyperplane
+![hyperplane](images/hyperplane.png)
