@@ -458,3 +458,7 @@ In this lesson you will learn about:
 ![elbow](images/elbow-method.png)
 #### K-Means recap
 ![k-means-recap](images/k-means-recap.png)
+### Hierarchical Clustering
+#### Hierarchical clustering
+![hierarchicalclustering](images/hierarchicalclustering.png)
+![hierarchicalclustering](images/hierarchicalclustering2.png)
