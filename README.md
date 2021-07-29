@@ -449,3 +449,6 @@ In this lesson you will learn about:
 ![asignnew](images/asignnewcentroid.png)
 ##### K-Means clustering - repeat
 ![repeat](images/repeatk-means.png)
+### More on K-Means
+#### K-Means clustering algorithm
+![k-means-algorithm](images/k-means-algorithm.png)
