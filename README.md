@@ -386,3 +386,5 @@ How to build a decision tree ?
 ![minimizing](images/minimizingcostfunct.png)
 #### Using gradient descent to minimizing the cost
 ![gradientdescent](images/gradientdescent.png)
+#### Training algorithm recap
+![training recap](images/trainingrecap.png)
