@@ -501,3 +501,9 @@ In this lesson you will learn about:
 ![clusters](images/clusterdbscan.png)
 #### Adventage of DBSCAN 
 ![adventageofdbscan](images/adventageofdbscan.png)
+## Module 5
+### Learning Objectives
+In this lesson you will learn about:
+* To understand the purpuse and mechanizem of recommendation systems.
+* To understand different types of recommander systems.
+* To implement recommender system on a real dataset.
