@@ -466,3 +466,7 @@ In this lesson you will learn about:
 ![agg](images/agglomerativeclus.png)
 #### Hierarchical clustering
 ![cluster](images/hierarchiecluster.png)
+### More on Hierarchical Clustering
+#### Agglomerative algorithm
+![agglom](images/agglomerativealgorithm.png)
+
