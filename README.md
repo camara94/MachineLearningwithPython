@@ -429,3 +429,5 @@ In this lesson you will learn about:
 ![whatisk-means](images/whatisk-means.png)
 #### K-means algorithms
 ![k-means](images/k-meansalgorithms.png)
+#### Determine the simalarity or dissimilarity
+![similarity](images/similarityanddissimilarity.png)
