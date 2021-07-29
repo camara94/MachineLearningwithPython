@@ -514,3 +514,5 @@ In this lesson you will learn about:
 g)
 #### Applications
 ![application](images/applicationrec.png)
+#### Advantage of recommender systems
+![ad](images/advantageofrecommendersystem.png)
