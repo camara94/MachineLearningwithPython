@@ -409,3 +409,6 @@ In this lesson you will learn about:
 * Measuring the Distances Between Clusters - Single Linkage Clustering 
 * Measuring the Distances Between Clusters - Algorithms for Hierarchy Clustering 
 * Density-Based Clustering
+### Intro to Clustering
+#### Clustering for segmentation
+![clustering](images/segmentationforclustering.png)
