@@ -434,3 +434,5 @@ In this lesson you will learn about:
 
 #### 1-dimensional similarity / distance
 ![onedim](images/onedimensional.png)
+#### 2-dimensional similarity / distance
+![towdim](images/two-dimensional.png)
