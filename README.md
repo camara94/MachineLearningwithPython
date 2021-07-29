@@ -499,3 +499,5 @@ In this lesson you will learn about:
 ![outliers](images/outliers.png)
 #### DBSCAN algorithm - clusters ?
 ![clusters](images/clusterdbscan.png)
+#### Adventage of DBSCAN 
+![adventageofdbscan](images/adventageofdbscan.png)
