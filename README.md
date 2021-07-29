@@ -454,3 +454,5 @@ In this lesson you will learn about:
 ![k-means-algorithm](images/k-means-algorithm.png)
 #### K-Means accuracy
 ![k-means-accuracy](images/k-means-accuracy.png)
+#### Choosing k
+![elbow](images/elbow-method.png)
