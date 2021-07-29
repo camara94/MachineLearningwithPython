@@ -401,3 +401,11 @@ How to build a decision tree ?
 ![propsandcons](images/propsandcons.png)
 #### SVM applications
 ![app](images/svmapplication.png)
+## Module 4
+### Learning Objectives
+In this lesson you will learn about:
+* K-Means Clustering plus Advantages & Disadvantages 
+* Hierarchical Clustering plus Advantages & Disadvantages 
+* Measuring the Distances Between Clusters - Single Linkage Clustering 
+* Measuring the Distances Between Clusters - Algorithms for Hierarchy Clustering 
+* Density-Based Clustering
