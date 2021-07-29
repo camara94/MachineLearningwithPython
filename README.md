@@ -507,3 +507,8 @@ In this lesson you will learn about:
 * To understand the purpuse and mechanizem of recommendation systems.
 * To understand different types of recommander systems.
 * To implement recommender system on a real dataset.
+
+### Intro to Recommender Systems
+#### What are recommender systems ?
+![recommender](images/recommendersystems.png)
+g)
