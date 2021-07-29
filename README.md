@@ -414,6 +414,8 @@ In this lesson you will learn about:
 ![clustering](images/segmentationforclustering.png)
 #### What is clustering ?
 ![whatisclustering](images/whatisclustering.png)
-
 #### Clustering vs classification
 ![clusteringvsclassification](images/clusteringvsclassification.png)
+#### Clustering application
+![clusteringapplication](images/clusteringapplication.png)
+![clusteringapplication](images/clusteringapplication2.png)
