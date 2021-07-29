@@ -489,3 +489,5 @@ In this lesson you will learn about:
 ![dbscan](images/dbscan.png)
 #### WHat is DBSCAN ?
 ![dbscan](images/whatisdbscan.png)
+#### How DBSCAN works
+![howdbscan](images/howdbscanworks.png)
