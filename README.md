@@ -512,3 +512,5 @@ In this lesson you will learn about:
 #### What are recommender systems ?
 ![recommender](images/recommendersystems.png)
 g)
+#### Applications
+![application](images/applicationrec.png)
