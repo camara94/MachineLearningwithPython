@@ -1,0 +1,216 @@
+0
+00:00:00,750 --> 00:00:04,490
+Hello, and welcome! In this video, we’ll be going through a
+
+1
+00:00:04,490 --> 00:00:09,800
+quick introduction to recommendation systems. So, let’s get started.
+
+2
+00:00:09,800 --> 00:00:14,450
+Even though peoples’ tastes may vary, they generally follow patterns.
+
+3
+00:00:14,450 --> 00:00:19,590
+By that, I mean that there are similarities in the things that people tend to like … or
+
+4
+00:00:19,590 --> 00:00:24,590
+another way to look at it, is that people tend to like things in the same category or
+
+5
+00:00:24,590 --> 00:00:30,280
+things that share the same characteristics. For example, if you’ve recently purchased
+
+6
+00:00:30,280 --> 00:00:36,100
+a book on Machine Learning in Python and you’ve enjoyed reading it, it’s very likely that
+
+7
+00:00:36,100 --> 00:00:40,800
+you’ll also enjoy reading a book on Data Visualization.
+
+8
+00:00:40,800 --> 00:00:45,020
+People also tend to have similar tastes to those of the people they’re close to in
+
+9
+00:00:45,020 --> 00:00:49,520
+their lives. Recommender systems try to capture these patterns
+
+10
+00:00:49,520 --> 00:00:54,489
+and similar behaviors, to help predict what else you might like.
+
+11
+00:00:54,489 --> 00:00:58,090
+Recommender systems have many applications that I’m sure you’re already familiar
+
+12
+00:00:58,090 --> 00:01:01,120
+with. Indeed, Recommender systems are usually at
+
+13
+00:01:01,120 --> 00:01:06,250
+play on many websites. For example, suggesting books on Amazon and
+
+14
+00:01:06,250 --> 00:01:11,200
+movies on Netflix. In fact, everything on Netflix’s website
+
+15
+00:01:11,200 --> 00:01:15,840
+is driven by customer selection. If a certain movie gets viewed frequently
+
+16
+00:01:15,840 --> 00:01:21,770
+enough, Netflix’s recommender system ensures that that movie gets an increasing number
+
+17
+00:01:21,770 --> 00:01:24,150
+of recommendations.
+
+18
+00:01:24,150 --> 00:01:29,860
+Another example can be found in a daily-use mobile app, where a recommender engine is
+
+19
+00:01:29,860 --> 00:01:35,300
+used to recommend anything from where to eat, or, what job to apply to.
+
+20
+00:01:35,300 --> 00:01:42,110
+On social media, sites like Facebook or LinkedIn, regularly recommend friendships.
+
+21
+00:01:42,110 --> 00:01:46,610
+Recommender systems are even used to personalize your experience on the web.
+
+22
+00:01:46,610 --> 00:01:52,229
+For example, when you go to a news platform website, a recommender system will make note
+
+23
+00:01:52,229 --> 00:01:57,110
+of the types of stories that you clicked on and make recommendations on which types of
+
+24
+00:01:57,110 --> 00:02:01,120
+stories you might be interested in reading, in future.
+
+25
+00:02:01,120 --> 00:02:06,270
+There are many of these types of examples and they are growing in number every day.
+
+26
+00:02:06,270 --> 00:02:12,310
+So, let’s take a closer look at the main benefits of using a recommendation system.
+
+27
+00:02:12,310 --> 00:02:17,790
+One of the main advantages of using recommendation systems is that users get a broader exposure
+
+28
+00:02:17,790 --> 00:02:21,650
+to many different products they might be interested in.
+
+29
+00:02:21,650 --> 00:02:27,930
+This exposure encourages users towards continual usage or purchase of their product.
+
+30
+00:02:27,930 --> 00:02:33,860
+Not only does this provide a better experience for the user but it benefits the service provider,
+
+31
+00:02:33,860 --> 00:02:39,930
+as well, with increased potential revenue and better security for its customers.
+
+32
+00:02:39,930 --> 00:02:46,989
+There are generally 2 main types of recommendation systems: Content-based and collaborative filtering.
+
+33
+00:02:46,989 --> 00:02:51,680
+The main difference between each, can be summed up by the type of statement that a consumer
+
+34
+00:02:51,680 --> 00:02:56,590
+might make. For instance, the main paradigm of a Content-based
+
+35
+00:02:56,590 --> 00:03:02,330
+recommendation system is driven by the statement: “Show me more of the same of what I've liked before."
+
+36
+00:03:02,330 --> 00:03:06,580
+Content-based systems try to figure out what
+
+37
+00:03:06,580 --> 00:03:12,770
+a user's favorite aspects of an item are, and then make recommendations on items that
+
+38
+00:03:12,770 --> 00:03:15,520
+share those aspects.
+
+39
+00:03:15,520 --> 00:03:20,220
+Collaborative filtering is based on a user saying, “Tell me what's popular among my
+
+40
+00:03:20,220 --> 00:03:26,099
+neighbors because I might like it too.” Collaborative filtering techniques find similar
+
+41
+00:03:26,099 --> 00:03:32,110
+groups of users, and provide recommendations based on similar tastes within that group.
+
+42
+00:03:32,110 --> 00:03:38,209
+In short, it assumes that a user might be interested in what similar users are interested in.
+
+43
+00:03:38,209 --> 00:03:42,400
+Also, there are Hybrid recommender systems,
+
+44
+00:03:42,400 --> 00:03:44,510
+which combine various mechanisms.
+
+45
+00:03:44,510 --> 00:03:53,360
+In terms of implementing recommender systems, there are 2 types: Memory-based and Model-based.
+
+46
+00:03:53,360 --> 00:04:00,290
+In memory-based approaches, we use the entire user-item dataset to generate a recommendation
+
+47
+00:04:00,290 --> 00:04:04,120
+system. It uses statistical techniques to approximate
+
+48
+00:04:04,120 --> 00:04:09,840
+users or items. Examples of these techniques include: Pearson
+
+49
+00:04:09,840 --> 00:04:15,420
+Correlation, Cosine Similarity and Euclidean Distance, among others.
+
+50
+00:04:15,420 --> 00:04:20,850
+In model-based approaches, a model of users is developed in an attempt to learn their
+
+51
+00:04:20,850 --> 00:04:24,860
+preferences. Models can be created using Machine Learning
+
+52
+00:04:24,860 --> 00:04:30,660
+techniques like regression, clustering, classification, and so on.
+
+53
+00:04:30,660 --> 00:04:33,349
+This is the end of our video. Thanks for watching!
+
