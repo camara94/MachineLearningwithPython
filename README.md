@@ -518,3 +518,5 @@ g)
 ![ad](images/advantageofrecommendersystem.png)
 #### Two types of recommender systems
 ![twotypes](images/twotypeofrecommendersystems.png)
+#### Implementing recommender systems
+![imple](images/implementingrecommendersystem.png)
