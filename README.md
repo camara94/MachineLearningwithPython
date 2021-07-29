@@ -480,4 +480,6 @@ In this lesson you will learn about:
 
 #### Hierarchical clustering vs. K-means
 ![k-meansvsclustering](images/hierachicalclusteringvsk-means.png)
-
+### DBSCAN Clustering
+#### Density-based clustering
+![density](images/density-basedclus.png)
