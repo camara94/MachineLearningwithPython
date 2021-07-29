@@ -1,0 +1,68 @@
+Hello, and welcome! In this video, we’ll be covering Hierarchical
+clustering. So let’s get started.
+Let’s look at this chart. An international team of scientists, led by
+UCLA biologists, used this dendrogram to report genetic data from more than 900 dogs from
+85 breeds -- and more than 200 wild gray wolves worldwide, including populations from North
+America, Europe, the Middle East, and East Asia.
+They used molecular genetic techniques to analyze more than 48,000 genetic markers.
+This diagram, shows hierarchical clustering of these animals based on the similarity in
+their genetic data. Hierarchical clustering algorithms build a
+hierarchy of clusters where each node is a cluster consisting of the clusters of its
+daughter nodes.
+Strategies for hierarchical clustering generally fall into two types: Divisive and Agglomerative.
+Divisive is top-down, so you start with all observations in a large cluster and break
+it down into smaller pieces. Think about divisive as "dividing" the cluster.
+Agglomerative is the opposite of divisive, so it is bottom-up, where each observation
+starts in its own cluster and pairs of clusters are merged together as they move up the hierarchy.
+Agglomeration means to amass or collect things, which is exactly what this does with the cluster.
+The Agglomerative approach is more popular among data scientists and so it is the main
+subject of this video.
+Let’s look at a sample of Agglomerative clustering.
+This method builds the hierarchy from the individual elements by progressively merging
+clusters. In our example, let’s say we want to cluster
+6 cities in Canada based on their distances from one another.
+They are: Toronto, Ottawa, Vancouver, Montreal, Winnipeg, and Edmonton.
+We construct a distance matrix at this stage, where the numbers in the row i column j is
+the distance between the i and j cities. In fact, this table shows the distances between
+each pair of cities.
+The algorithm is started by assigning each city to its own cluster.
+So, if we have 6 cities, we have 6 clusters, each containing just one city.
+Let’s note each city by showing the first two characters of its name.
+The first step is to determine which cities -- let’s call them clusters from now on
+-- to merge into a cluster. Usually, we want to take the two closest clusters according
+to the chosen distance. Looking at the distance matrix, Montreal and
+Ottawa are the closest clusters. So, we make a cluster out of them.
+Please notice that we just use a simple 1-dimentional distance feature here, but our object can
+be multi-dimensional, and distance measurement can be either Euclidean, Pearson, average
+distance, or many others, depending on data type and domain knowledge.
+Anyhow, we have to merge these two closest cities in the distance matrix as well.
+So, rows and columns are merged as the cluster is constructed.
+As you can see in the distance matrix, rows and columns related to Montreal and Ottawa
+cities are merged as the cluster is constructed. Then, the distances from all cities to this
+new merged cluster get updated. But how? For example, how do we calculate the distance
+from Winnipeg to the Ottawa-Montreal cluster? Well, there are different approaches, but
+let’s assume, for example, we just select the distance from the centre of the Ottawa-Montreal
+cluster to Winnipeg. Updating the distance matrix, we now have
+one less cluster. Next, we look for the closest clusters once
+again. In this case, Ottawa-Montreal and Toronto
+are the closest ones, which creates another cluster.
+In the next step, the closest distance is between the Vancouver cluster and the Edmonton
+cluster. Forming a new cluster, their data in the matrix
+table gets updated. Essentially, the rows and columns are merged
+as the clusters are merged and the distance updated.
+This is a common way to implement this type of clustering, and has the benefit of caching
+distances between clusters.
+In the same way, agglomerative algorithm proceeds by merging clusters.
+And we repeat it until all clusters are merged and the tree becomes completed.
+It means, until all cities are clustered into a single cluster of size 6.
+Hierarchical clustering is typically visualized as a dendrogram as shown on this slide.
+Each merge is represented by a horizontal line.
+The y-coordinate of the horizontal line is the similarity of the two clusters that were
+merged, where cities are viewed as singleton clusters.
+By moving up from the bottom layer to the top node, a dendrogram allows us to reconstruct
+the history of merges that resulted in the depicted clustering.
+Essentially, Hierarchical clustering does not require a pre-specified number of clusters.
+However, in some applications we want a partition of disjoint clusters just as in flat clustering.
+In those cases, the hierarchy needs to be cut at some point.
+For example here, cutting in a specific level of similarity, we create 3 clusters of similar cities.
+This concludes this video. Thanks for watching.

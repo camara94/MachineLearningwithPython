@@ -1,0 +1,272 @@
+0
+00:00:00,669 --> 00:00:05,310
+Hello, and welcome! In this video, we’ll be covering Hierarchical
+
+1
+00:00:05,310 --> 00:00:08,189
+clustering. So let’s get started.
+
+2
+00:00:08,189 --> 00:00:13,250
+Let’s look at this chart. An international team of scientists, led by
+
+3
+00:00:13,250 --> 00:00:20,100
+UCLA biologists, used this dendrogram to report genetic data from more than 900 dogs from
+
+4
+00:00:20,100 --> 00:00:27,810
+85 breeds -- and more than 200 wild gray wolves worldwide, including populations from North
+
+5
+00:00:27,810 --> 00:00:31,580
+America, Europe, the Middle East, and East Asia.
+
+6
+00:00:31,580 --> 00:00:39,059
+They used molecular genetic techniques to analyze more than 48,000 genetic markers.
+
+7
+00:00:39,059 --> 00:00:44,929
+This diagram, shows hierarchical clustering of these animals based on the similarity in
+
+8
+00:00:44,929 --> 00:00:50,059
+their genetic data. Hierarchical clustering algorithms build a
+
+9
+00:00:50,059 --> 00:00:55,739
+hierarchy of clusters where each node is a cluster consisting of the clusters of its
+
+10
+00:00:55,739 --> 00:00:58,079
+daughter nodes.
+
+11
+00:00:58,079 --> 00:01:06,940
+Strategies for hierarchical clustering generally fall into two types: Divisive and Agglomerative.
+
+12
+00:01:06,940 --> 00:01:12,590
+Divisive is top-down, so you start with all observations in a large cluster and break
+
+13
+00:01:12,590 --> 00:01:19,619
+it down into smaller pieces. Think about divisive as "dividing" the cluster.
+
+14
+00:01:19,619 --> 00:01:25,500
+Agglomerative is the opposite of divisive, so it is bottom-up, where each observation
+
+15
+00:01:25,500 --> 00:01:33,520
+starts in its own cluster and pairs of clusters are merged together as they move up the hierarchy.
+
+16
+00:01:33,520 --> 00:01:40,770
+Agglomeration means to amass or collect things, which is exactly what this does with the cluster.
+
+17
+00:01:40,770 --> 00:01:46,469
+The Agglomerative approach is more popular among data scientists and so it is the main
+
+18
+00:01:46,469 --> 00:01:48,520
+subject of this video.
+
+19
+00:01:48,520 --> 00:01:52,170
+Let’s look at a sample of Agglomerative clustering.
+
+20
+00:01:52,170 --> 00:01:58,149
+This method builds the hierarchy from the individual elements by progressively merging
+
+21
+00:01:58,149 --> 00:02:02,069
+clusters. In our example, let’s say we want to cluster
+
+22
+00:02:02,069 --> 00:02:06,060
+6 cities in Canada based on their distances from one another.
+
+23
+00:02:06,060 --> 00:02:13,690
+They are: Toronto, Ottawa, Vancouver, Montreal, Winnipeg, and Edmonton.
+
+24
+00:02:13,690 --> 00:02:19,870
+We construct a distance matrix at this stage, where the numbers in the row i column j is
+
+25
+00:02:19,870 --> 00:02:26,690
+the distance between the i and j cities. In fact, this table shows the distances between
+
+26
+00:02:26,690 --> 00:02:29,409
+each pair of cities.
+
+27
+00:02:29,409 --> 00:02:33,840
+The algorithm is started by assigning each city to its own cluster.
+
+28
+00:02:33,840 --> 00:02:41,830
+So, if we have 6 cities, we have 6 clusters, each containing just one city.
+
+29
+00:02:41,830 --> 00:02:47,530
+Let’s note each city by showing the first two characters of its name.
+
+30
+00:02:47,530 --> 00:02:52,300
+The first step is to determine which cities -- let’s call them clusters from now on
+
+31
+00:02:52,300 --> 00:02:59,129
+-- to merge into a cluster. Usually, we want to take the two closest clusters according
+
+32
+00:02:59,129 --> 00:03:04,709
+to the chosen distance. Looking at the distance matrix, Montreal and
+
+33
+00:03:04,709 --> 00:03:10,700
+Ottawa are the closest clusters. So, we make a cluster out of them.
+
+34
+00:03:10,700 --> 00:03:16,879
+Please notice that we just use a simple 1-dimentional distance feature here, but our object can
+
+35
+00:03:16,879 --> 00:03:23,959
+be multi-dimensional, and distance measurement can be either Euclidean, Pearson, average
+
+36
+00:03:23,959 --> 00:03:29,180
+distance, or many others, depending on data type and domain knowledge.
+
+37
+00:03:29,180 --> 00:03:35,239
+Anyhow, we have to merge these two closest cities in the distance matrix as well.
+
+38
+00:03:35,239 --> 00:03:41,019
+So, rows and columns are merged as the cluster is constructed.
+
+39
+00:03:41,019 --> 00:03:46,290
+As you can see in the distance matrix, rows and columns related to Montreal and Ottawa
+
+40
+00:03:46,290 --> 00:03:53,280
+cities are merged as the cluster is constructed. Then, the distances from all cities to this
+
+41
+00:03:53,280 --> 00:04:00,219
+new merged cluster get updated. But how? For example, how do we calculate the distance
+
+42
+00:04:00,219 --> 00:04:06,569
+from Winnipeg to the Ottawa-Montreal cluster? Well, there are different approaches, but
+
+43
+00:04:06,569 --> 00:04:11,709
+let’s assume, for example, we just select the distance from the centre of the Ottawa-Montreal
+
+44
+00:04:11,709 --> 00:04:17,380
+cluster to Winnipeg. Updating the distance matrix, we now have
+
+45
+00:04:17,380 --> 00:04:22,450
+one less cluster. Next, we look for the closest clusters once
+
+46
+00:04:22,450 --> 00:04:27,420
+again. In this case, Ottawa-Montreal and Toronto
+
+47
+00:04:27,420 --> 00:04:32,170
+are the closest ones, which creates another cluster.
+
+48
+00:04:32,170 --> 00:04:37,730
+In the next step, the closest distance is between the Vancouver cluster and the Edmonton
+
+49
+00:04:37,730 --> 00:04:41,580
+cluster. Forming a new cluster, their data in the matrix
+
+50
+00:04:41,580 --> 00:04:46,330
+table gets updated. Essentially, the rows and columns are merged
+
+51
+00:04:46,330 --> 00:04:49,320
+as the clusters are merged and the distance updated.
+
+52
+00:04:49,320 --> 00:04:54,750
+This is a common way to implement this type of clustering, and has the benefit of caching
+
+53
+00:04:54,750 --> 00:04:57,900
+distances between clusters.
+
+54
+00:04:57,900 --> 00:05:04,370
+In the same way, agglomerative algorithm proceeds by merging clusters.
+
+55
+00:05:04,370 --> 00:05:09,240
+And we repeat it until all clusters are merged and the tree becomes completed.
+
+56
+00:05:09,240 --> 00:05:16,620
+It means, until all cities are clustered into a single cluster of size 6.
+
+57
+00:05:16,620 --> 00:05:22,600
+Hierarchical clustering is typically visualized as a dendrogram as shown on this slide.
+
+58
+00:05:22,600 --> 00:05:26,180
+Each merge is represented by a horizontal line.
+
+59
+00:05:26,180 --> 00:05:32,470
+The y-coordinate of the horizontal line is the similarity of the two clusters that were
+
+60
+00:05:32,470 --> 00:05:36,830
+merged, where cities are viewed as singleton clusters.
+
+61
+00:05:36,830 --> 00:05:42,630
+By moving up from the bottom layer to the top node, a dendrogram allows us to reconstruct
+
+62
+00:05:42,630 --> 00:05:47,480
+the history of merges that resulted in the depicted clustering.
+
+63
+00:05:47,480 --> 00:05:53,810
+Essentially, Hierarchical clustering does not require a pre-specified number of clusters.
+
+64
+00:05:53,810 --> 00:06:02,080
+However, in some applications we want a partition of disjoint clusters just as in flat clustering.
+
+65
+00:06:02,080 --> 00:06:06,600
+In those cases, the hierarchy needs to be cut at some point.
+
+66
+00:06:06,600 --> 00:06:13,150
+For example here, cutting in a specific level of similarity, we create 3 clusters of similar cities.
+
+67
+00:06:14,780 --> 00:06:17,620
+This concludes this video. Thanks for watching.
+
