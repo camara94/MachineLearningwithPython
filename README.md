@@ -412,3 +412,5 @@ In this lesson you will learn about:
 ### Intro to Clustering
 #### Clustering for segmentation
 ![clustering](images/segmentationforclustering.png)
+#### What is clustering ?
+![whatisclustering](images/whatisclustering.png)
