@@ -1,0 +1,312 @@
+0
+00:00:00,599 --> 00:00:05,210
+Hello, and welcome! In this video, we’ll be covering DBSCAN,
+
+1
+00:00:05,210 --> 00:00:10,860
+a density-based clustering algorithm, which is appropriate to use when examining spatial
+
+2
+00:00:10,860 --> 00:00:13,530
+data. So let’s get started.
+
+3
+00:00:13,530 --> 00:00:19,800
+Most of the traditional clustering techniques, such as k-means, hierarchical, and fuzzy clustering,
+
+4
+00:00:19,800 --> 00:00:23,910
+can be used to group data in an un-supervised way.
+
+5
+00:00:23,910 --> 00:00:30,470
+However, when applied to tasks with arbitrary shape clusters, or clusters within clusters,
+
+6
+00:00:30,470 --> 00:00:34,579
+traditional techniques might not be able to achieve good results.
+
+7
+00:00:34,579 --> 00:00:40,420
+That is, elements in the same cluster might not share enough similarity -- or the performance
+
+8
+00:00:40,420 --> 00:00:42,039
+may be poor.
+
+9
+00:00:42,039 --> 00:00:48,420
+Additionally, while partitioning-based algorithms, such as K-Means, may be easy to understand
+
+10
+00:00:48,420 --> 00:00:53,469
+and implement in practice, the algorithm has no notion of outliers.
+
+11
+00:00:53,469 --> 00:00:59,929
+That is, all points are assigned to a cluster, even if they do not belong in any.
+
+12
+00:00:59,929 --> 00:01:05,700
+In the domain of anomaly detection, this causes problems as anomalous points will be assigned
+
+13
+00:01:05,700 --> 00:01:12,470
+to the same cluster as "normal" data points. The anomalous points pull the cluster centroid
+
+14
+00:01:12,470 --> 00:01:17,950
+towards them, making it harder to classify them as anomalous points.
+
+15
+00:01:17,950 --> 00:01:23,430
+In contrast, Density-based clustering locates regions of high density that are separated
+
+16
+00:01:23,430 --> 00:01:29,820
+from one another by regions of low density. Density, in this context, is defined as the
+
+17
+00:01:29,820 --> 00:01:36,090
+number of points within a specified radius. A specific and very popular type of density-based
+
+18
+00:01:36,090 --> 00:01:42,380
+clustering is DBSCAN. DBSCAN is particularly effective for tasks
+
+19
+00:01:42,380 --> 00:01:50,039
+like class identification on a spatial context. The wonderful attribute of the DBSCAN algorithm
+
+20
+00:01:50,039 --> 00:01:56,219
+is that it can find out any arbitrary shape cluster without getting affected by noise.
+
+21
+00:01:56,219 --> 00:02:01,070
+For example, this map shows the location of weather stations in Canada.
+
+22
+00:02:01,070 --> 00:02:08,020
+DBSCAN can be used here to find the group of stations, which show the same weather conditions.
+
+23
+00:02:08,020 --> 00:02:13,500
+As you can see, it not only finds different arbitrary shaped clusters, it can find the
+
+24
+00:02:13,500 --> 00:02:19,950
+denser part of data-centered samples by ignoring less-dense areas or noises.
+
+25
+00:02:19,950 --> 00:02:25,060
+Now, let's look at this clustering algorithm to see how it works.
+
+26
+00:02:25,060 --> 00:02:32,490
+DBSCAN stands for Density-Based Spatial Clustering of Applications with Noise.
+
+27
+00:02:32,490 --> 00:02:38,290
+This technique is one of the most common clustering algorithms, which works based on density of
+
+28
+00:02:38,290 --> 00:02:42,820
+object. DBSCAN works on the idea is that if a particular
+
+29
+00:02:42,820 --> 00:02:49,160
+point belongs to a cluster, it should be near to lots of other points in that cluster.
+
+30
+00:02:49,160 --> 00:02:55,050
+It works based on 2 parameters: Radius and Minimum Points.
+
+31
+00:02:55,050 --> 00:03:00,530
+R determines a specified radius that, if it includes enough points within it, we call
+
+32
+00:03:00,530 --> 00:03:05,370
+it a "dense area." M determines the minimum number of data points
+
+33
+00:03:05,370 --> 00:03:09,090
+we want in a neighborhood to define a cluster.
+
+34
+00:03:09,090 --> 00:03:15,790
+Let’s define radius as 2 units. For the sake of simplicity, assume it as radius
+
+35
+00:03:15,790 --> 00:03:22,730
+of 2 centimeters around a point of interest. Also, let’s set the minimum point, or M,
+
+36
+00:03:22,730 --> 00:03:29,680
+to be 6 points including the point of interest. To see how DBSCAN works, we have to determine
+
+37
+00:03:29,680 --> 00:03:34,690
+the type of points. Each point in our dataset can be either a
+
+38
+00:03:34,690 --> 00:03:40,270
+core, border, or outlier point. Don’t worry, I’ll explain what these points
+
+39
+00:03:40,270 --> 00:03:45,290
+are, in a moment. But the whole idea behind the DBSCAN algorithm
+
+40
+00:03:45,290 --> 00:03:49,510
+is to visit each point, and find its type first.
+
+41
+00:03:49,510 --> 00:03:53,280
+Then we group points as clusters based on their types.
+
+42
+00:03:53,280 --> 00:03:58,510
+Let’s pick a point randomly. First we check to see whether it’s a core
+
+43
+00:03:58,510 --> 00:04:00,240
+data point.
+
+44
+00:04:00,240 --> 00:04:07,620
+So, what is a core point? A data point is a core point if, within R-neighborhood
+
+45
+00:04:07,620 --> 00:04:15,090
+of the point, there are at least M points. For example, as there are 6 points in the
+
+46
+00:04:15,090 --> 00:04:20,370
+2-centimeter neighbor of the red point, we mark this point as a core point.
+
+47
+00:04:20,370 --> 00:04:24,340
+Ok, what happens if it’s NOT a core point?
+
+48
+00:04:24,340 --> 00:04:31,410
+Let’s look at another point. Is this point a core point? No.
+
+49
+00:04:31,410 --> 00:04:36,730
+As you can see, there are only 5 points in this neighborhood, including the yellow point.
+
+50
+00:04:36,730 --> 00:04:43,070
+So, what kind of point is this one? In fact, it is a "border" point.
+
+51
+00:04:43,070 --> 00:04:48,090
+What is a border point? A data point is a BORDER point if:
+
+52
+00:04:48,090 --> 00:04:52,350
+a. Its neighborhood contains less than M data points, or
+
+53
+00:04:52,350 --> 00:05:00,340
+b. It is reachable from some core point. Here, Reachability means it is within R-distance
+
+54
+00:05:00,340 --> 00:05:04,540
+from a core point. It means that even though the yellow point
+
+55
+00:05:04,540 --> 00:05:10,430
+is within the 2-centimeter neighborhood of the red point, it is not by itself a core
+
+56
+00:05:10,430 --> 00:05:15,680
+point, because it does not have at least 6 points in its neighborhood.
+
+57
+00:05:15,680 --> 00:05:22,030
+We continue with the next point. As you can see it is also a core point.
+
+58
+00:05:22,030 --> 00:05:27,310
+And all points around it, which are not core points, are border points.
+
+59
+00:05:27,310 --> 00:05:29,250
+Next core point.
+
+60
+00:05:29,250 --> 00:05:31,030
+And next core point.
+
+61
+00:05:31,030 --> 00:05:36,690
+Let’s take this point. You can see it is not a core point, nor is
+
+62
+00:05:36,690 --> 00:05:41,420
+it a border point. So, we’d label it as an outlier.
+
+63
+00:05:41,420 --> 00:05:46,389
+What is an outlier? An outlier is a point that: Is not a core
+
+64
+00:05:46,389 --> 00:05:51,590
+point, and also, is not close enough to be reachable from a core point.
+
+65
+00:05:51,590 --> 00:05:58,210
+We continue and visit all the points in the dataset and label them as either Core, Border,
+
+66
+00:05:58,210 --> 00:06:00,500
+or Outlier.
+
+67
+00:06:00,500 --> 00:06:06,080
+The next step is to connect core points that are neighbors, and put them in the same cluster.
+
+68
+00:06:06,080 --> 00:06:14,100
+So, a cluster is formed as at least one core point, plus all reachable core points, plus
+
+69
+00:06:14,100 --> 00:06:18,980
+all their borders. It simply shapes all the clusters and finds
+
+70
+00:06:18,980 --> 00:06:20,880
+outliers as well.
+
+71
+00:06:20,880 --> 00:06:26,940
+Let’s review this one more time to see why DBSCAN is cool.
+
+72
+00:06:26,940 --> 00:06:32,950
+DBSCAN can find arbitrarily shaped clusters. It can even find a cluster completely surrounded
+
+73
+00:06:32,950 --> 00:06:38,530
+by a different cluster. DBSCAN has a notion of noise, and is robust
+
+74
+00:06:38,530 --> 00:06:43,860
+to outliers. On top of that, DBSCAN makes it very practical
+
+75
+00:06:43,860 --> 00:06:49,400
+for use in many really world problems because it does not require one to specify the number
+
+76
+00:06:49,400 --> 00:06:53,650
+of clusters, such as K in k-Means.
+
+77
+00:06:53,650 --> 00:06:56,590
+This concludes this video. Thanks for watching!
+
