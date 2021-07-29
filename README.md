@@ -443,3 +443,5 @@ In this lesson you will learn about:
 ![k-means initialize](images/k-means-initialize.png
 ##### K-Means clustering - calculate the distance
 ![k-means-distance](images/k-means-distance.png)
+##### K-Means clustering - asign to centroid
+![asign centroid](images/asigncentroid.png)
