@@ -388,3 +388,6 @@ How to build a decision tree ?
 ![gradientdescent](images/gradientdescent.png)
 #### Training algorithm recap
 ![training recap](images/trainingrecap.png)
+### Support Vector Machines
+#### Classification with SVM
+![svm](images/svm.png)
