@@ -487,3 +487,5 @@ In this lesson you will learn about:
 ![density-basedvsk-means](images/k-meansvsdensity-based.png)
 #### DBSCAN for class identification
 ![dbscan](images/dbscan.png)
+#### WHat is DBSCAN ?
+![dbscan](images/whatisdbscan.png)
