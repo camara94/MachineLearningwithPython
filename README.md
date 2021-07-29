@@ -471,3 +471,5 @@ In this lesson you will learn about:
 ![agglom](images/agglomerativealgorithm.png)
 #### Similarity  / Distance
 ![similarity](images/similaritydistancehier.png)
+#### How can calculate Distance
+![how calculate](images/howcalculatedist.png)
