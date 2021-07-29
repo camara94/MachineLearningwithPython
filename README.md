@@ -421,3 +421,6 @@ In this lesson you will learn about:
 ![clusteringapplication](images/clusteringapplication2.png)
 #### Why clustering ?
 ![why clustering](images/whyclustering.png)
+
+#### Clustering algorithms
+![clusteringalgorithms](images/clusteringalgorithms.png)
