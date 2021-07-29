@@ -495,6 +495,7 @@ In this lesson you will learn about:
 ![core](images/corepoint.png)
 #### DBSCAN algorithm - border point ?
 ![borderpoint](images/borderpoint.png)
-
 #### DBSCAN algorithm - outliers ?
 ![outliers](images/outliers.png)
+#### DBSCAN algorithm - clusters ?
+![clusters](images/clusterdbscan.png)
