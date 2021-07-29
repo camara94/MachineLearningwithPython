@@ -378,3 +378,5 @@ How to build a decision tree ?
 ### Logistic Regression - Training
 #### General cost function
 ![cost function](images/costfunction.png)
+#### Plotting cost function of the model
+![cost](images/plotcostfunc.png)
