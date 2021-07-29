@@ -485,3 +485,5 @@ In this lesson you will learn about:
 ![density](images/density-basedclus.png)
 #### K-means vs. density-based clustering
 ![density-basedvsk-means](images/k-meansvsdensity-based.png)
+#### DBSCAN for class identification
+![dbscan](images/dbscan.png)
