@@ -391,6 +391,7 @@ How to build a decision tree ?
 ### Support Vector Machines
 #### Classification with SVM
 ![svm](images/svm.png)
-
 #### What is SVM ?
 ![svm](images/whatissvm.png)
+#### Data transformation
+![data transform](images/datatransform.png)
