@@ -483,3 +483,5 @@ In this lesson you will learn about:
 ### DBSCAN Clustering
 #### Density-based clustering
 ![density](images/density-basedclus.png)
+#### K-means vs. density-based clustering
+![density-basedvsk-means](images/k-meansvsdensity-based.png)
