@@ -424,3 +424,6 @@ In this lesson you will learn about:
 
 #### Clustering algorithms
 ![clusteringalgorithms](images/clusteringalgorithms.png)
+### K-Means Clustering
+#### What is K-means clustering ?
+![whatisk-means](images/whatisk-means.png)
