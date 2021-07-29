@@ -439,3 +439,5 @@ In this lesson you will learn about:
 ![towdim](images/multi-dimensional.png)
 #### How does K-means clustering work ?
 ![k-means](images/howk-meanswork.png)
+##### K-Means clustering - initialize K
+![k-means initialize](images/k-means-initialize.png
