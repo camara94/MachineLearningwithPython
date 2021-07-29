@@ -516,3 +516,5 @@ g)
 ![application](images/applicationrec.png)
 #### Advantage of recommender systems
 ![ad](images/advantageofrecommendersystem.png)
+#### Two types of recommender systems
+![twotypes](images/twotypeofrecommendersystems.png)
