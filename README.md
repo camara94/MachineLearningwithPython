@@ -447,3 +447,5 @@ In this lesson you will learn about:
 ![asign centroid](images/asigncentroid.png)
 ##### K-Means clustering - compute new centroids
 ![asignnew](images/asignnewcentroid.png)
+##### K-Means clustering - repeat
+![repeat](images/repeatk-means.png)
