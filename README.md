@@ -491,3 +491,5 @@ In this lesson you will learn about:
 ![dbscan](images/whatisdbscan.png)
 #### How DBSCAN works
 ![howdbscan](images/howdbscanworks.png)
+#### DBSCAN algorithm - core point ?
+![core](images/corepoint.png)
