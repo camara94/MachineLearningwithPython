@@ -478,3 +478,6 @@ In this lesson you will learn about:
 #### Adventages vs. disadventages
 ![hierachical](images/adventagevsdisadventageofhierachicalclustering.png)
 
+#### Hierarchical clustering vs. K-means
+![k-meansvsclustering](images/hierachicalclusteringvsk-means.png)
+
