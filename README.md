@@ -469,4 +469,5 @@ In this lesson you will learn about:
 ### More on Hierarchical Clustering
 #### Agglomerative algorithm
 ![agglom](images/agglomerativealgorithm.png)
-
+#### Similarity  / Distance
+![similarity](images/similaritydistancehier.png)
