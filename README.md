@@ -441,3 +441,5 @@ In this lesson you will learn about:
 ![k-means](images/howk-meanswork.png)
 ##### K-Means clustering - initialize K
 ![k-means initialize](images/k-means-initialize.png
+##### K-Means clustering - calculate the distance
+![k-means-distance](images/k-means-distance.png)
