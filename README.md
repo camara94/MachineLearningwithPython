@@ -399,3 +399,5 @@ How to build a decision tree ?
 ![hyperplane](images/hyperplane.png)
 #### Pros and const of SVM
 ![propsandcons](images/propsandcons.png)
+#### SVM applications
+![app](images/svmapplication.png)
