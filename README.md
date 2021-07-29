@@ -493,3 +493,5 @@ In this lesson you will learn about:
 ![howdbscan](images/howdbscanworks.png)
 #### DBSCAN algorithm - core point ?
 ![core](images/corepoint.png)
+#### DBSCAN algorithm - border point ?
+![borderpoint](images/borderpoint.png)
