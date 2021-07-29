@@ -452,3 +452,5 @@ In this lesson you will learn about:
 ### More on K-Means
 #### K-Means clustering algorithm
 ![k-means-algorithm](images/k-means-algorithm.png)
+#### K-Means accuracy
+![k-means-accuracy](images/k-means-accuracy.png)
