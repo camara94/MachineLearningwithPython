@@ -380,3 +380,5 @@ How to build a decision tree ?
 ![cost function](images/costfunction.png)
 #### Plotting cost function of the model
 ![cost](images/plotcostfunc.png)
+#### Logistic regression cost function
+![logistic](images/logisticfunctcost.png)
