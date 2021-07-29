@@ -1,0 +1,256 @@
+0
+00:00:00,410 --> 00:00:04,970
+Hello, and welcome! In this video, we’ll be covering more details
+
+1
+00:00:04,970 --> 00:00:08,750
+about Hierarchical clustering. Let’s get started.
+
+2
+00:00:08,750 --> 00:00:14,059
+Let’s look at Agglomerative algorithm for Hierarchical Clustering.
+
+3
+00:00:14,059 --> 00:00:18,120
+Remember that Agglomerative clustering is a bottom-up approach.
+
+4
+00:00:18,120 --> 00:00:26,050
+Let’s say our dataset has n data points. First, we want to create n clusters, one for
+
+5
+00:00:26,050 --> 00:00:31,500
+each data point. Then each point is assigned as a cluster.
+
+6
+00:00:31,500 --> 00:00:38,890
+Next, we want to compute the distance/proximity matrix, which will be an n by n table.
+
+7
+00:00:38,890 --> 00:00:43,579
+After that, we want to iteratively run the following steps until the specified cluster
+
+8
+00:00:43,579 --> 00:00:48,890
+number is reached, or until there is only one cluster left.
+
+9
+00:00:48,890 --> 00:00:56,660
+First, MERGE the two nearest clusters. (Distances are computed already in the proximity matrix.)
+
+10
+00:00:56,660 --> 00:01:01,649
+Second, UPDATE the proximity matrix with the new values.
+
+11
+00:01:01,649 --> 00:01:07,620
+We stop after we’ve reached the specified number of clusters, or there is only one cluster
+
+12
+00:01:07,620 --> 00:01:14,940
+remaining, with the result stored in a dendrogram. So, in the proximity matrix, we have to measure
+
+13
+00:01:14,940 --> 00:01:20,610
+the distances between clusters, and also merge the clusters that are “nearest.”
+
+14
+00:01:20,610 --> 00:01:27,170
+So, the key operation is the computation of the proximity between the clusters with one
+
+15
+00:01:27,170 --> 00:01:31,230
+point, and also clusters with multiple data points.
+
+16
+00:01:31,230 --> 00:01:36,110
+At this point, there are a number of key questions that need to be answered.
+
+17
+00:01:36,110 --> 00:01:41,530
+For instance, “How do we measure the distances between these clusters and How do we define
+
+18
+00:01:41,530 --> 00:01:47,850
+the ‘nearest’ among clusters?” We also can ask, “Which points do we use?”
+
+19
+00:01:47,850 --> 00:01:53,970
+First, let’s see how to calculate the distance between 2 clusters with 1 point each.
+
+20
+00:01:53,970 --> 00:02:00,560
+Let’s assume that we have a dataset of patients, and we want to cluster them using hierarchy
+
+21
+00:02:00,560 --> 00:02:05,220
+clustering. So, our data points are patients, with a feature
+
+22
+00:02:05,220 --> 00:02:11,950
+set of 3 dimensions. For example, Age, Body Mass Index (or BMI),
+
+23
+00:02:11,950 --> 00:02:16,070
+and Blood Pressure. We can use different distance measurements
+
+24
+00:02:16,070 --> 00:02:21,560
+to calculate the proximity matrix. For instance, Euclidean distance.
+
+25
+00:02:21,560 --> 00:02:28,930
+So, if we have a dataset of n patients, we can build an n by n dissimilarly-distance
+
+26
+00:02:28,930 --> 00:02:32,770
+matrix. It will give us the distance of clusters with
+
+27
+00:02:32,770 --> 00:02:37,800
+1 data point. However, as mentioned, we merge clusters in
+
+28
+00:02:37,800 --> 00:02:42,570
+Agglomerative clustering. Now, the question is, “How can we calculate
+
+29
+00:02:42,570 --> 00:02:48,470
+the distance between clusters when there are multiple patients in each cluster?”
+
+30
+00:02:48,470 --> 00:02:53,790
+We can use different criteria to find the closest clusters, and merge them.
+
+31
+00:02:53,790 --> 00:03:01,010
+In general, it completely depends on the data type, dimensionality of data, and most importantly,
+
+32
+00:03:01,010 --> 00:03:06,680
+the domain knowledge of the dataset. In fact, different approaches to defining
+
+33
+00:03:06,680 --> 00:03:11,790
+the distance between clusters, distinguish the different algorithms.
+
+34
+00:03:11,790 --> 00:03:15,940
+As you might imagine, there are multiple ways we can do this.
+
+35
+00:03:15,940 --> 00:03:21,880
+The first one is called Single-Linkage Clustering. Single linkage is defined as the shortest
+
+36
+00:03:21,880 --> 00:03:27,650
+distance between 2 points in each cluster, such as point “a” and “b”.
+
+37
+00:03:27,650 --> 00:03:33,480
+Next up is Complete-Linkage Clustering. This time, we are finding the longest distance
+
+38
+00:03:33,480 --> 00:03:39,680
+between points in each cluster, such as the distance between point “a” and “b”.
+
+39
+00:03:39,680 --> 00:03:45,710
+The third type of linkage is Average Linkage Clustering, or the mean distance.
+
+40
+00:03:45,710 --> 00:03:50,660
+This means we’re looking at the average distance of each point from one cluster to
+
+41
+00:03:50,660 --> 00:03:56,959
+every point in another cluster. The final linkage type to be reviewed is Centroid
+
+42
+00:03:56,959 --> 00:04:01,790
+Linkage Clustering. Centroid is the average of the feature sets
+
+43
+00:04:01,790 --> 00:04:06,660
+of points in a cluster. This linkage takes into account the centroid
+
+44
+00:04:06,660 --> 00:04:11,310
+of each cluster when determining the minimum distance.
+
+45
+00:04:11,310 --> 00:04:15,380
+There are 3 main advantages to using hierarchical clustering.
+
+46
+00:04:15,380 --> 00:04:21,940
+First, we do not need to specify the number of clusters required for the algorithm.
+
+47
+00:04:21,940 --> 00:04:26,340
+Second, hierarchical clustering is easy to implement.
+
+48
+00:04:26,340 --> 00:04:32,400
+And third, the dendrogram produced is very useful in understanding the data.
+
+49
+00:04:32,400 --> 00:04:39,150
+There are some disadvantages as well. First, the algorithm can never undo any previous
+
+50
+00:04:39,150 --> 00:04:44,090
+steps. So for example, the algorithm clusters 2 points,
+
+51
+00:04:44,090 --> 00:04:50,000
+and later on we see that the connection was not a good one, the program cannot undo that
+
+52
+00:04:50,000 --> 00:04:54,100
+step. Second, the time complexity for the clustering
+
+53
+00:04:54,100 --> 00:05:00,100
+can result in very long computation times, in comparison with efficient algorithms, such
+
+54
+00:05:00,100 --> 00:05:04,720
+k-Means. Finally, if we have a large dataset, it can
+
+55
+00:05:04,720 --> 00:05:09,320
+become difficult to determine the correct number of clusters by the dendrogram.
+
+56
+00:05:09,320 --> 00:05:15,230
+Now, let’s compare Hierarchical clustering with k-Means.
+
+57
+00:05:15,230 --> 00:05:22,090
+K-Means is more efficient for large datasets. In contrast to k-Means, Hierarchical clustering
+
+58
+00:05:22,090 --> 00:05:27,070
+does not require the number of clusters to be specified.
+
+59
+00:05:27,070 --> 00:05:31,830
+Hierarchical clustering gives more than one partitioning depending on the resolution,
+
+60
+00:05:31,830 --> 00:05:37,110
+whereas k-Means gives only one partitioning of the data.
+
+61
+00:05:37,110 --> 00:05:42,530
+Hierarchical clustering always generates the same clusters, in contrast with k-Means that
+
+62
+00:05:42,530 --> 00:05:49,600
+returns different clusters each time it is run due to random initialization of centroids.
+
+63
+00:05:49,600 --> 00:05:50,580
+Thanks for watching!
+

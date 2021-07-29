@@ -1,0 +1,64 @@
+Hello, and welcome! In this video, we’ll be covering more details
+about Hierarchical clustering. Let’s get started.
+Let’s look at Agglomerative algorithm for Hierarchical Clustering.
+Remember that Agglomerative clustering is a bottom-up approach.
+Let’s say our dataset has n data points. First, we want to create n clusters, one for
+each data point. Then each point is assigned as a cluster.
+Next, we want to compute the distance/proximity matrix, which will be an n by n table.
+After that, we want to iteratively run the following steps until the specified cluster
+number is reached, or until there is only one cluster left.
+First, MERGE the two nearest clusters. (Distances are computed already in the proximity matrix.)
+Second, UPDATE the proximity matrix with the new values.
+We stop after we’ve reached the specified number of clusters, or there is only one cluster
+remaining, with the result stored in a dendrogram. So, in the proximity matrix, we have to measure
+the distances between clusters, and also merge the clusters that are “nearest.”
+So, the key operation is the computation of the proximity between the clusters with one
+point, and also clusters with multiple data points.
+At this point, there are a number of key questions that need to be answered.
+For instance, “How do we measure the distances between these clusters and How do we define
+the ‘nearest’ among clusters?” We also can ask, “Which points do we use?”
+First, let’s see how to calculate the distance between 2 clusters with 1 point each.
+Let’s assume that we have a dataset of patients, and we want to cluster them using hierarchy
+clustering. So, our data points are patients, with a feature
+set of 3 dimensions. For example, Age, Body Mass Index (or BMI),
+and Blood Pressure. We can use different distance measurements
+to calculate the proximity matrix. For instance, Euclidean distance.
+So, if we have a dataset of n patients, we can build an n by n dissimilarly-distance
+matrix. It will give us the distance of clusters with
+1 data point. However, as mentioned, we merge clusters in
+Agglomerative clustering. Now, the question is, “How can we calculate
+the distance between clusters when there are multiple patients in each cluster?”
+We can use different criteria to find the closest clusters, and merge them.
+In general, it completely depends on the data type, dimensionality of data, and most importantly,
+the domain knowledge of the dataset. In fact, different approaches to defining
+the distance between clusters, distinguish the different algorithms.
+As you might imagine, there are multiple ways we can do this.
+The first one is called Single-Linkage Clustering. Single linkage is defined as the shortest
+distance between 2 points in each cluster, such as point “a” and “b”.
+Next up is Complete-Linkage Clustering. This time, we are finding the longest distance
+between points in each cluster, such as the distance between point “a” and “b”.
+The third type of linkage is Average Linkage Clustering, or the mean distance.
+This means we’re looking at the average distance of each point from one cluster to
+every point in another cluster. The final linkage type to be reviewed is Centroid
+Linkage Clustering. Centroid is the average of the feature sets
+of points in a cluster. This linkage takes into account the centroid
+of each cluster when determining the minimum distance.
+There are 3 main advantages to using hierarchical clustering.
+First, we do not need to specify the number of clusters required for the algorithm.
+Second, hierarchical clustering is easy to implement.
+And third, the dendrogram produced is very useful in understanding the data.
+There are some disadvantages as well. First, the algorithm can never undo any previous
+steps. So for example, the algorithm clusters 2 points,
+and later on we see that the connection was not a good one, the program cannot undo that
+step. Second, the time complexity for the clustering
+can result in very long computation times, in comparison with efficient algorithms, such
+k-Means. Finally, if we have a large dataset, it can
+become difficult to determine the correct number of clusters by the dendrogram.
+Now, let’s compare Hierarchical clustering with k-Means.
+K-Means is more efficient for large datasets. In contrast to k-Means, Hierarchical clustering
+does not require the number of clusters to be specified.
+Hierarchical clustering gives more than one partitioning depending on the resolution,
+whereas k-Means gives only one partitioning of the data.
+Hierarchical clustering always generates the same clusters, in contrast with k-Means that
+returns different clusters each time it is run due to random initialization of centroids.
+Thanks for watching!
