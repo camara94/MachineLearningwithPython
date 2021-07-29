@@ -473,3 +473,5 @@ In this lesson you will learn about:
 ![similarity](images/similaritydistancehier.png)
 #### How can calculate Distance
 ![how calculate](images/howcalculatedist.png)
+#### Distance between clusters
+![distancebetweenclusters](images/distancebetweenclusters.png)
