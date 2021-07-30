@@ -527,3 +527,5 @@ g)
 ![weigh](images/weigh.png)
 ### Candidate movies for recommendation
 ![candidat](images/candidat.png)
+### Finding the recommendation
+![finding](images/findingrecommendation.png)
