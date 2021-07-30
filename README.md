@@ -542,3 +542,5 @@ g)
 #### Creating the weighted ratings matrix
 ![creating](images/createdweighted.png)
 ![creating](images/createdweighted2.png)
+### Collaborative filtering
+![colaborative](images/collaborativefiltering2.png)
