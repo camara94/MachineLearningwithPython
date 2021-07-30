@@ -531,6 +531,7 @@ g)
 ![finding](images/findingrecommendation.png)
 ### Comme back to recommended
 ![choosepattern](images/choosepattern.png)
-
 ### Collaborative Filtering
 ![collaborative filtering](images/collaborativefiltering.png)
+#### User-based collaborative filtering
+![user-based](images/user-based.png)
