@@ -535,3 +535,5 @@ g)
 ![collaborative filtering](images/collaborativefiltering.png)
 #### User-based collaborative filtering
 ![user-based](images/user-based.png)
+#### User ratings matrix
+![user-matrix](images/user-matrix.png)
