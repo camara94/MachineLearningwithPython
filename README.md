@@ -525,3 +525,5 @@ g)
 ![reco](images/recommendersystems2.png)
 ### Weighing the genres
 ![weigh](images/weigh.png)
+### Candidate movies for recommendation
+![candidat](images/candidat.png)
