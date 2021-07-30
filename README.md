@@ -520,3 +520,14 @@ g)
 ![twotypes](images/twotypeofrecommendersystems.png)
 #### Implementing recommender systems
 ![imple](images/implementingrecommendersystem.png)
+### Content-based recommender systems
+![content-based](images/content-based.png)
+![reco](images/recommendersystems2.png)
+### Weighing the genres
+![weigh](images/weigh.png)
+### Candidate movies for recommendation
+![candidat](images/candidat.png)
+### Finding the recommendation
+![finding](images/findingrecommendation.png)
+### Comme back to recommended
+![choosepattern](images/choosepattern.png)
