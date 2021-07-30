@@ -1,0 +1,220 @@
+[33me666daf[m dataset
+[33m50da0ec[m en_Content-Based Recommender Systems.txt
+[33m7362c77[m Comme back to recommended
+[33mad28b25[m Finding the recommendation
+[33mb208dc8[m Candidate movies for recommendation
+[33m1268377[m Weighing the genres
+[33mb072124[m Content-based recommender systems
+[33m167ca13[m en_Intro to Recommender Systems.txt
+[33mdcd0311[m Implementing recommender systems
+[33m89fe206[m Two types of recommender systems
+[33m47b81ef[m Advantage of recommender systems
+[33m93c275f[m Applications
+[33med3eb85[m What are recommender systems ?
+[33m6e3dbb6[m Learning Objectives
+[33m36e1a83[m exams 4 PNG
+[33m521d474[m dataset weather-stations20140101-20141231
+[33mfcc85e0[m en_DBSCAN Clustering
+[33m7866f6e[m Adventage of DBSCAN
+[33mc128df1[m  DBSCAN algorithm - clusters ?
+[33m5dbe439[m DBSCAN algorithm - outliers ?
+[33mb038d4c[m DBSCAN algorithm - border point ?
+[33mf4b8a69[m DBSCAN algorithm - core point ?
+[33mcbc7589[m How DBSCAN works
+[33mecd690e[m WHat is DBSCAN ?
+[33m29dc068[m DBSCAN for class identification
+[33m296a6b8[m K-means vs. density-based clustering'
+[33m069aa92[m Density-based clustering
+[33m4dc32ff[m hierarchical clustering model
+[33mb5cc0aa[m dataset of hierachical algorithm
+[33m9b3817d[m en_More on Hierarchical Clustering
+[33m85ef8de[m Hierarchical clustering vs. K-means
+[33m22bc6fa[m Adventages vs. disadventages
+[33m156d43b[m Distance between clusters
+[33m36c6745[m How can calculate Distance
+[33m8e1da03[m Similarity  / Distance
+[33m1b88075[m Agglomerative algorithm
+[33m5d5d7fa[m en_Hierarchical Clustering
+[33m02c954e[m Hierarchical clustering
+[33m77b4ac0[m Agglomerative clustering
+[33m50c98b0[m Hierarchical clustering
+[33m4f3b10d[m lab k-means
+[33m28f1912[m Cust_Segmentation dataset
+[33mb5dd0df[m en_More on K-Means
+[33m27f7448[m K-Means recap
+[33m0daa9d3[m Choosing k
+[33m2b65654[m K-Means accuracy
+[33mcd07f38[m K-Means clustering algorithm
+[33mde74ce2[m en_K-Means Clustering
+[33mf68195e[m K-Means clustering - repeat
+[33md9df602[m K-Means clustering - compute new centroids
+[33m266ca9e[m K-Means clustering - asign to centroid
+[33m5a9e490[m K-Means clustering - calculate the distance
+[33m8dfd73c[m K-Means clustering - initialize K
+[33m97b3012[m How does K-means clustering work ?
+[33m0b882ad[m Multi-dimensional similarity / distance
+[33m3ea5290[m 2-dimensional similarity / distance
+[33md7af4e5[m 1-dimensional similarity / distance
+[33m0611c21[m Determine the simalarity or dissimilarity
+[33m4146f5d[m K-means algorithms
+[33m8675287[m What is K-means clustering ?
+[33m592e47b[m en_Intro to Clustering
+[33mecc6089[m Clustering algorithms
+[33m40d54cc[m Why clustering ?
+[33m19e72bc[m Clustering application
+[33m23f1430[m Clustering vs classification
+[33m0aa8ee6[m What is clustering ?
+[33m311eb09[m Clustering for segmentation
+[33m4cbf033[m Module 4 - Learning Objectives
+[33mf254820[m lab SVM
+[33m7c0d98a[m dataset svm
+[33m152d88d[m en_Support Vector Machine (SVM)
+[33m24a524b[m SVM applications
+[33mcf3efe3[m Pros and const of SVM
+[33m56cada3[m Using SVM to find the hyperplane
+[33ma107b0d[m Data transformation
+[33m683a25c[m What is SVM ?
+[33mba67a1c[m Classification with SVM
+[33m268c357[m lab
+[33mf39af4a[m Training algorithm recap
+[33me6edf1b[m Using gradient descent to minimizing the cost
+[33mb48bcbd[m Minimizing the cost function of the model
+[33mca15971[m Logistic regression cost function
+[33ma522870[m Plotting cost function of the model
+[33mb5cb282[m General cost function
+[33m2e1e265[m Logistic Regression vs Linear Regression
+[33md37124a[m The training process
+[33m812179e[m Clarification customer churn model
+[33ma05f559[m The problem with using linear regression
+[33mfba4655[m Linear regression classification problems ?
+[33m437ffb7[m Predicting churn using linear regression
+[33m10bf03b[m Predicting customer income
+[33md7b156c[m en_Intro to Logistic Regression
+[33m642c23f[m Building a model for customer churn
+[33m4684c31[m When is logistic regression suitables ?
+[33m96a5ff7[m Logistic regression applications
+[33mc2f51f9[m What is logistic regression ?
+[33mfe3bd29[m labo decision tree
+[33m080375a[m dataset
+[33m96f243b[m Building Decision Trees
+[33m411cd7f[m Correct way to build a decision tree
+[33mfec0e8e[m Calculating information
+[33m8fe4d60[m What is information gain ?
+[33m431bac9[m Which attribute is the best ?
+[33m60e6c5b[m What about 'Sexe' ?
+[33mbffd79f[m Is 'Cholesterol' the best attribute ?
+[33m7468586[m With attribute is the best one to use ?
+[33m3537598[m Entropy
+[33ma2db01e[m Which attribute is the best attribute  ?
+[33m2c318fc[m How to build decision tree
+[33m9cc278a[m en_Intro to Decision Trees
+[33m720e74c[m Decision tree learning algorithm
+[33m6bf5b15[m Building a decision tree with the training set
+[33m2d225ed[m What is decision tree ?
+[33mca65277[m lab module 3
+[33m198fe54[m dataset teleCust1000t
+[33meeae08a[m en_Evaluation Metrics in Classification
+[33m941915b[m Log Loss
+[33m73c97ba[m F1-score
+[33mc6b5d97[m Jaccard index
+[33m3466ecb[m Classification accuracy
+[33m249f976[m en_K-Nearest Neighbors
+[33m9de6705[m Computing continuous target using KNN
+[33m54198b8[m What is the best value of K for KNN ?
+[33m3d12680[m multi-dimensional space
+[33mdff3faa[m 1 -dimensional space
+[33mf668bbc[m The K-Nearest Neighbors algorithm
+[33m729d6b3[m What is K-Nearest Neighbor ( or KNN ) ?
+[33m427136f[m Determining the class unsing 5 KNNs
+[33m5adcf5d[m Determining the class unsing 1st  KNN
+[33m42a0b43[m Intro to KNN
+[33m8ab360c[m en_Intro to Classification
+[33m39c4681[m Classification algorithms in machine learning
+[33mc6897a2[m Classification applications
+[33m95642d4[m Classification use cases
+[33m5b87669[m Example of multi-class classification
+[33m3d680fe[m How does classification work ?
+[33m611a135[m What is classification ?
+[33m28a9f35[m Learning Objectives
+[33m0209858[m exams 2 PDF
+[33madd4ec6[m exams 2
+[33m4f4ab15[m lab 3
+[33maaaf77e[m dataset lab 3
+[33mf216c6a[m Non-Linear Regression
+[33ma2b876d[m Linear vs non-linear regression
+[33me611195[m What is non-polynomial regression ?
+[33mdcd7032[m What is polynomial regression ?
+[33me052f08[m Different types of regression
+[33m58bae3b[m Should we use linear regression ?
+[33m5b0d5c9[m en_Evaluation Metrics in Regression Models
+[33mc8ac73e[m What is an error of the model ?
+[33mf2ece35[m Regression accuracy
+[33m40268ef[m en_Model Evaluation in Regression Models
+[33m7208ca3[m How to use K-fold cross-validation ?
+[33m18d04c6[m Train/Test split evaluation approch
+[33m7edc812[m What is training &amp; out-of-sample accuracy ?
+[33m10cbe3e[m Train and test on the same dataset
+[33ma842a08[m Calculating the accuracy of a model
+[33m3609484[m Best approach for most accurate result ?
+[33m66488b4[m Model evaluation approaches
+[33mb6c7a7a[m en_Multiple Linear Regression
+[33m8841790[m A&A - on multiple linear regression
+[33m0c17ce5[m Making prediction with multiple linear regression
+[33md385213[m Estimating multiple linear regression parameters
+[33m382647f[m Using MSE to expose the errors in the model
+[33mc56953a[m Predicting continuous values with multiple linear regression
+[33m98d47cc[m Examples of  multiple linear regression
+[33m78a64dc[m Lab2 file python
+[33md77589d[m original dataset
+[33ma0e0c11[m dataset 2
+[33m3a62025[m dataset 1
+[33m0acb287[m en_Simple Linear Regression
+[33mf227527[m Pros of linear regression
+[33m0e9519c[m Predictions with linear regression
+[33mbc1b902[m Estimating the parameters
+[33maab2830[m How to find the best fit ?
+[33m342e944[m Linear regression model representation
+[33m258dd76[m How does linear regression works ?
+[33m5859450[m Linear regression topology
+[33m581d536[m Using linear regression to predict continuous values
+[33mb8ff17c[m Introduction to Regression
+[33me918744[m Application of regression
+[33m36f0494[m Application of regression
+[33mb6fd78b[m Types of regression
+[33m4f26097[m What is a regression model ?
+[33m39b293d[m What is regression ?
+[33mbf634d4[m Learning Objectives
+[33m3dcd73c[m exams module 1
+[33m09c6346[m Supervised vs Unsupervised
+[33m69b824b[m Supervised vs unsupervised learning
+[33mdca26d7[m What is clustering ?
+[33m14c2b0c[m What is unsupervised learning
+[33mb498cf1[m What is regression ?
+[33m88eb818[m What is classification ?
+[33m4e7691f[m Type of supervised learning
+[33mf877c8e[m Teaching the model with labeled data
+[33mdac6089[m What is supervised learning
+[33m4c3423a[m Python for Machine Learning
+[33m2c87e26[m Scikit-learn functions
+[33m3e504b7[m More about scikit-learn
+[33m3c255e8[m Python libraries for machine learning
+[33m4e74fe3[m intro ML
+[33m2ce1ac9[m intro ML
+[33m812658d[m let's started ml
+[33m5e4e8a5[m difference between ai, ml and deep learning
+[33m93dda22[m Major machine learning techniques
+[33mabc3926[m Examples of machine learning
+[33mf525bd3[m How machine learning works ?
+[33m26f0337[m What is machine learning
+[33m90a1676[m Learning Objectives
+[33m77eaaf5[m Final Exam
+[33m8628b48[m Module 5 - Recommender Systems
+[33m5b38937[m Module 4 - Clustering
+[33m4dfb00b[m Module 3 - Classification
+[33mc8a0fcc[m Module 2 - Regression
+[33m6ac0366[m Module 1 - Machine Learning
+[33m2855658[m les algorithmes
+[33m618382a[m Learning Objectives
+[33mf3cfa46[m welcome
+[33m89cdaba[m welcome
+[33mc3fe49c[m Initial commit
