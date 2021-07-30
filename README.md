@@ -539,3 +539,6 @@ g)
 ![user-matrix](images/user-matrix.png)
 #### Learning the similarity weights
 ![weigth](images/similarityweights.png)
+#### Creating the weighted ratings matrix
+![creating](images/createdweighted.png)
+![creating](images/createdweighted2.png)
