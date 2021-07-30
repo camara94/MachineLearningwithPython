@@ -544,3 +544,5 @@ g)
 ![creating](images/createdweighted2.png)
 ### Collaborative filtering
 ![colaborative](images/collaborativefiltering2.png)
+### Challenges of collaborative filtering
+![challenges](images/challenges.png)
