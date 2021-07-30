@@ -529,3 +529,5 @@ g)
 ![candidat](images/candidat.png)
 ### Finding the recommendation
 ![finding](images/findingrecommendation.png)
+### Comme back to recommended
+![choosepattern](images/choosepattern.png)
