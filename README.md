@@ -532,6 +532,5 @@ g)
 ### Comme back to recommended
 ![choosepattern](images/choosepattern.png)
 
-
 ### Collaborative Filtering
 ![collaborative filtering](images/collaborativefiltering.png)
