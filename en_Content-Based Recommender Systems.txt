@@ -1,0 +1,62 @@
+Hello, and welcome! In this video, we’ll be covering content-based
+recommendation systems. So let’s get started.
+A content-based recommendation system tries to recommend items to users, based on their
+profile. The user’s profile revolves around that
+user’s preferences and tastes. It is shaped based on user ratings, including
+the number of times that user has clicked on different items or perhaps, even liked
+those items. The recommendation process is based on the
+similarity between those items. Similarity, or closeness of items, is measured
+based on the similarity in the content of those items.
+When we say content, we’re talking about things like the item’s category, tag, genre,
+and so on. For example, if we have 4 movies, and if the
+user likes or rates the first 2 items, and if item 3 is similar to item 1, in terms of
+their genre, the engine will also recommend item 3 to the user.
+In essence, this is what content-based recommender system engines do.
+Now, let’s dive into a content-based recommender system to see how it works.
+Let’s assume we have a dataset of only 6 movies.
+This dataset shows movies that our user has watched, and also the genre of each of the
+movies. For example, “Batman versus Superman”
+is in the Adventure, Super Hero genre. And “Guardians of the Galaxy” is in Comedy,
+Adventure, Super Hero, and Science-Fiction genres.
+Let’s say the user has watched and rated 3 movies so far and she has given a rating
+of 2 out of 10 to the first movie, 10 out of 10 to the second movie, and an 8 out of
+10 to the third. The task of the recommender engine is to recommend
+one of the 3 candidate movies to this user. Or, in other words, we want to predict what
+the user’s possible rating would be, of the 3 candidate movies if she were to watch them.
+To achieve this, we have to build the user profile.
+First, we create a vector to show the user’s ratings for the movies that she’s already
+watched. We call it “input user ratings.” Then, we encode the movies through the
+"One Hot Encoding” approach. Genre of movies are used here as a feature set.
+We use the first 3 movies to make this matrix,
+which represents the movie ‘feature-set’ matrix.
+If we multiply these 2 matrices, we can get the “weighted feature set” for the movies.
+Let’s take a look at the result. This matrix is also called the “Weighted
+Genre Matrix,” and represents the interests of the user for each genre based on the movies
+that she’s watched. Now, given the weighted genre matrix, we can
+shape the profile of our active user. Essentially, we can aggregate the weighted
+genres, and then normalize them to find the user profile.
+It clearly indicates that she likes “super hero” movies more than other genres.
+We use this profile to figure out what movie is proper to recommend to this user.
+Recall that we also had 3 candidate movies for recommendation, that haven’t been watched
+by the user. We encode these movies as well.
+Now we’re in the position where we have to figure out which of them is most suited
+to be recommended to the user.
+To do this, we simply multiply the user-profile matrix by the candidate movie matrix, which
+results in the “weighted movies” matrix. It shows the weight of each genre, with respect
+to the user profile. Now, if we aggregate these weighted ratings,
+we get the active user’s possible interest-level in these 3 movies.
+In essence, it’s our “recommendation” list, which we can sort to rank the movies,
+and recommend them to the user. For example, we can say that the “Hitchhiker's
+Guide to the Galaxy” has the highest score in our list, and is proper to recommend to
+the user. Now you can come back and fill the predicted
+ratings for the user.
+So, to recap what we’ve discussed so far, the recommendation in a content-based system,
+is based on user’s tastes, and the content or feature set items.
+Such a model is very efficient. However, in some cases it doesn’t work.
+For example, assume that we have a movie in the “drama” genre, which the user has
+never watched. So, this genre would not be in her profile.
+Therefore, she’ll only get recommendations related to genres that are already in her
+profile, and the recommender engine may never recommend any movie within other genres.
+This problem can be solved by other types of recommender systems such as
+"Collaborative Filtering.”
+Thanks for watching!
