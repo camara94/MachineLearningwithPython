@@ -537,3 +537,5 @@ g)
 ![user-based](images/user-based.png)
 #### User ratings matrix
 ![user-matrix](images/user-matrix.png)
+#### Learning the similarity weights
+![weigth](images/similarityweights.png)
